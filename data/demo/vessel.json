@@ -1,0 +1,18 @@
+{
+  "name": "RV Explorer",
+  "call_sign": "VLEXP-IND",
+  "operator": "NCPOR / MoES",
+  "ice_class": "PC3",
+  "latitude": -58.5,
+  "longitude": 10.5,
+  "heading_deg": 178.0,
+  "speed_knots": 12.5,
+  "cruising_speed_knots": 12.0,
+  "max_speed_knots": 15.5,
+  "fuel_capacity_mt": 2500.0,
+  "fuel_remaining_mt": 2180.0,
+  "base_fuel_rate_mt_per_nm": 0.035,
+  "destination": "Maitri Research Station",
+  "dest_lat": -70.767,
+  "dest_lon": 11.731
+}

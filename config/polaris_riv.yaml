@@ -1,0 +1,86 @@
+# Versioned POLARIS Risk Index Values (RIV)
+# Reference: International Maritime Organization (IMO) MSC.1/Circ.1519 (2016)
+# Guidance on Methodologies for Assessing Operational Capabilities and Limitations in Ice (POLARIS)
+# Research Implementation — Not Regulatory Approval
+
+metadata:
+  source: "IMO MSC.1/Circ.1519 Table 1.2"
+  version: "1.0-2016"
+  date: "2016-06-06"
+  disclaimer: "POLARIS-style research implementation — not regulatory approval."
+
+# RIV values for Polar Classes PC1 to PC7 across ice types (stages of development)
+# Scale: Integer values typically between -3 and +3
+riv_tables:
+  PC1:
+    multi_year_ice: 2
+    second_year_ice: 2
+    thick_first_year_ice: 3
+    medium_first_year_ice: 3
+    thin_first_year_ice: 3
+    grey_white_ice: 3
+    grey_ice: 3
+    open_water: 3
+  PC2:
+    multi_year_ice: 1
+    second_year_ice: 2
+    thick_first_year_ice: 2
+    medium_first_year_ice: 3
+    thin_first_year_ice: 3
+    grey_white_ice: 3
+    grey_ice: 3
+    open_water: 3
+  PC3:
+    multi_year_ice: 0
+    second_year_ice: 1
+    thick_first_year_ice: 2
+    medium_first_year_ice: 2
+    thin_first_year_ice: 3
+    grey_white_ice: 3
+    grey_ice: 3
+    open_water: 3
+  PC4:
+    multi_year_ice: -1
+    second_year_ice: 0
+    thick_first_year_ice: 1
+    medium_first_year_ice: 2
+    thin_first_year_ice: 2
+    grey_white_ice: 3
+    grey_ice: 3
+    open_water: 3
+  PC5:
+    multi_year_ice: -2
+    second_year_ice: -1
+    thick_first_year_ice: 0
+    medium_first_year_ice: 1
+    thin_first_year_ice: 2
+    grey_white_ice: 2
+    grey_ice: 3
+    open_water: 3
+  PC6:
+    multi_year_ice: -3
+    second_year_ice: -2
+    thick_first_year_ice: -1
+    medium_first_year_ice: 0
+    thin_first_year_ice: 1
+    grey_white_ice: 2
+    grey_ice: 2
+    open_water: 3
+  PC7:
+    multi_year_ice: -3
+    second_year_ice: -3
+    thick_first_year_ice: -2
+    medium_first_year_ice: -1
+    thin_first_year_ice: 0
+    grey_white_ice: 1
+    grey_ice: 2
+    open_water: 3
+  OpenWaterNonPolar:
+    multi_year_ice: -3
+    second_year_ice: -3
+    thick_first_year_ice: -3
+    medium_first_year_ice: -3
+    thin_first_year_ice: -2
+    grey_white_ice: -1
+    grey_ice: 0
+    open_water: 3

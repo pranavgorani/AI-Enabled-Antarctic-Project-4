@@ -1,0 +1,9 @@
+name,country,operator,latitude,longitude,elevation_m,type,status
+Maitri Research Station,India,NCPOR / MoES,-70.767,11.731,117,Permanent,Active
+Bharati Research Station,India,NCPOR / MoES,-69.407,76.195,35,Permanent,Active
+Dakshin Gangotri (Historic),India,NCPOR / MoES,-70.083,12.0,0,Supply Base / Historical,Decommissioned Base
+Neumayer Station III,Germany,AWI,-70.674,-8.274,40,Permanent,Active
+Troll Station,Norway,Norwegian Polar Institute,-72.011,2.535,1275,Permanent,Active
+Halley VI Research Station,United Kingdom,BAS,-75.583,-26.2,30,Permanent,Active
+Syowa Station,Japan,NIPR,-69.006,39.584,29,Permanent,Active
+Princess Elisabeth,Belgium,International Polar Foundation,-71.949,23.348,1400,Zero-Emission Summer,Active

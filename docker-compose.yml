@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  polar-navigator:
+    build: .
+    container_name: polar_navigator_ai
+    ports:
+      - "8000:8000"   # FastAPI Backend & Swagger (/docs)
+      - "8501:8501"   # Streamlit Antarctic Command Center
+    environment:
+      - APP_MODE=DEMO
+      - DEBUG=False
+      - DATABASE_URL=sqlite:///./polar_navigator.db
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+
+  # Optional PostgreSQL + PostGIS container for enterprise production deployments
+  postgis-db:
+    image: postgis/postgis:15-3.3
+    container_name: polar_postgis
+    environment:
+      - POSTGRES_DB=polar_navigator_db
+      - POSTGRES_USER=polar_user
+      - POSTGRES_PASSWORD=polar_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgis_data:/var/lib/postgresql/data
+    profiles:
+      - production
+
+volumes:
+  postgis_data:

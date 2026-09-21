@@ -1,0 +1,165 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.731,
+          -70.767
+        ]
+      },
+      "properties": {
+        "name": "Maitri Research Station",
+        "country": "India",
+        "operator": "NCPOR / MoES",
+        "latitude": -70.767,
+        "longitude": 11.731,
+        "elevation_m": 117,
+        "type": "Permanent",
+        "status": "Active"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.195,
+          -69.407
+        ]
+      },
+      "properties": {
+        "name": "Bharati Research Station",
+        "country": "India",
+        "operator": "NCPOR / MoES",
+        "latitude": -69.407,
+        "longitude": 76.195,
+        "elevation_m": 35,
+        "type": "Permanent",
+        "status": "Active"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0,
+          -70.083
+        ]
+      },
+      "properties": {
+        "name": "Dakshin Gangotri (Historic)",
+        "country": "India",
+        "operator": "NCPOR / MoES",
+        "latitude": -70.083,
+        "longitude": 12.0,
+        "elevation_m": 0,
+        "type": "Supply Base / Historical",
+        "status": "Decommissioned Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.274,
+          -70.674
+        ]
+      },
+      "properties": {
+        "name": "Neumayer Station III",
+        "country": "Germany",
+        "operator": "AWI",
+        "latitude": -70.674,
+        "longitude": -8.274,
+        "elevation_m": 40,
+        "type": "Permanent",
+        "status": "Active"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.535,
+          -72.011
+        ]
+      },
+      "properties": {
+        "name": "Troll Station",
+        "country": "Norway",
+        "operator": "Norwegian Polar Institute",
+        "latitude": -72.011,
+        "longitude": 2.535,
+        "elevation_m": 1275,
+        "type": "Permanent",
+        "status": "Active"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -26.2,
+          -75.583
+        ]
+      },
+      "properties": {
+        "name": "Halley VI Research Station",
+        "country": "United Kingdom",
+        "operator": "BAS",
+        "latitude": -75.583,
+        "longitude": -26.2,
+        "elevation_m": 30,
+        "type": "Permanent",
+        "status": "Active"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.584,
+          -69.006
+        ]
+      },
+      "properties": {
+        "name": "Syowa Station",
+        "country": "Japan",
+        "operator": "NIPR",
+        "latitude": -69.006,
+        "longitude": 39.584,
+        "elevation_m": 29,
+        "type": "Permanent",
+        "status": "Active"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.348,
+          -71.949
+        ]
+      },
+      "properties": {
+        "name": "Princess Elisabeth",
+        "country": "Belgium",
+        "operator": "International Polar Foundation",
+        "latitude": -71.949,
+        "longitude": 23.348,
+        "elevation_m": 1400,
+        "type": "Zero-Emission Summer",
+        "status": "Active"
+      }
+    }
+  ]
+}

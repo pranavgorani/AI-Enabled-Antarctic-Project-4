@@ -1,0 +1,3912 @@
+[
+  {
+    "latitude": -72.0,
+    "longitude": 0.0,
+    "current_speed_knots": 0.55,
+    "current_direction_deg": 281.1,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 1.0,
+    "current_speed_knots": 0.59,
+    "current_direction_deg": 271.6,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.14,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 2.0,
+    "current_speed_knots": 0.79,
+    "current_direction_deg": 264.1,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.21,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 3.0,
+    "current_speed_knots": 0.77,
+    "current_direction_deg": 279.3,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.44,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 4.0,
+    "current_speed_knots": 0.44,
+    "current_direction_deg": 254.2,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.41,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 5.0,
+    "current_speed_knots": 0.45,
+    "current_direction_deg": 281.3,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 33.92,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 6.0,
+    "current_speed_knots": 0.66,
+    "current_direction_deg": 263.3,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.38,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 7.0,
+    "current_speed_knots": 0.44,
+    "current_direction_deg": 267.3,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 8.0,
+    "current_speed_knots": 0.51,
+    "current_direction_deg": 296.0,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.4,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 9.0,
+    "current_speed_knots": 0.65,
+    "current_direction_deg": 272.8,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.14,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 10.0,
+    "current_speed_knots": 0.84,
+    "current_direction_deg": 254.2,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.16,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 11.0,
+    "current_speed_knots": 0.56,
+    "current_direction_deg": 290.6,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.25,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 12.0,
+    "current_speed_knots": 0.75,
+    "current_direction_deg": 268.9,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 13.0,
+    "current_speed_knots": 0.5,
+    "current_direction_deg": 275.1,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 14.0,
+    "current_speed_knots": 0.63,
+    "current_direction_deg": 252.4,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.22,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 15.0,
+    "current_speed_knots": 0.7,
+    "current_direction_deg": 296.8,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.06,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 16.0,
+    "current_speed_knots": 0.69,
+    "current_direction_deg": 275.9,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.06,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 17.0,
+    "current_speed_knots": 0.6,
+    "current_direction_deg": 284.7,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.2,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 18.0,
+    "current_speed_knots": 0.78,
+    "current_direction_deg": 273.2,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.02,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 19.0,
+    "current_speed_knots": 0.74,
+    "current_direction_deg": 269.6,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.06,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 20.0,
+    "current_speed_knots": 0.91,
+    "current_direction_deg": 299.3,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 33.92,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 21.0,
+    "current_speed_knots": 0.82,
+    "current_direction_deg": 250.3,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.08,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -72.0,
+    "longitude": 22.0,
+    "current_speed_knots": 0.62,
+    "current_direction_deg": 253.9,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.29,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 0.0,
+    "current_speed_knots": 0.74,
+    "current_direction_deg": 273.2,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.29,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 1.0,
+    "current_speed_knots": 0.77,
+    "current_direction_deg": 255.5,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.16,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 2.0,
+    "current_speed_knots": 0.62,
+    "current_direction_deg": 270.5,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 33.85,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 3.0,
+    "current_speed_knots": 0.51,
+    "current_direction_deg": 282.5,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.3,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 4.0,
+    "current_speed_knots": 0.7,
+    "current_direction_deg": 267.6,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.14,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 5.0,
+    "current_speed_knots": 0.81,
+    "current_direction_deg": 255.3,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 6.0,
+    "current_speed_knots": 0.77,
+    "current_direction_deg": 268.1,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.35,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 7.0,
+    "current_speed_knots": 0.76,
+    "current_direction_deg": 273.4,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.01,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 8.0,
+    "current_speed_knots": 0.56,
+    "current_direction_deg": 272.4,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.18,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 9.0,
+    "current_speed_knots": 0.52,
+    "current_direction_deg": 285.9,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.0,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 10.0,
+    "current_speed_knots": 0.73,
+    "current_direction_deg": 277.6,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 33.98,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 11.0,
+    "current_speed_knots": 0.5,
+    "current_direction_deg": 259.6,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.58,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 12.0,
+    "current_speed_knots": 0.61,
+    "current_direction_deg": 266.7,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.11,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 13.0,
+    "current_speed_knots": 0.57,
+    "current_direction_deg": 258.3,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.17,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 14.0,
+    "current_speed_knots": 0.53,
+    "current_direction_deg": 280.8,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.28,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 15.0,
+    "current_speed_knots": 0.44,
+    "current_direction_deg": 269.6,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.22,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 16.0,
+    "current_speed_knots": 0.84,
+    "current_direction_deg": 286.0,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 17.0,
+    "current_speed_knots": 0.51,
+    "current_direction_deg": 261.9,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.39,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 18.0,
+    "current_speed_knots": 0.64,
+    "current_direction_deg": 290.2,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.05,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 19.0,
+    "current_speed_knots": 0.69,
+    "current_direction_deg": 264.1,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.19,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 20.0,
+    "current_speed_knots": 0.55,
+    "current_direction_deg": 277.8,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.34,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 21.0,
+    "current_speed_knots": 0.78,
+    "current_direction_deg": 262.1,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.3,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -71.0,
+    "longitude": 22.0,
+    "current_speed_knots": 0.5,
+    "current_direction_deg": 257.7,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.61,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 0.0,
+    "current_speed_knots": 0.64,
+    "current_direction_deg": 271.9,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.14,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 1.0,
+    "current_speed_knots": 0.64,
+    "current_direction_deg": 271.6,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.15,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 2.0,
+    "current_speed_knots": 0.57,
+    "current_direction_deg": 281.0,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.27,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 3.0,
+    "current_speed_knots": 0.65,
+    "current_direction_deg": 279.4,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 33.9,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 4.0,
+    "current_speed_knots": 0.72,
+    "current_direction_deg": 274.4,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.27,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 5.0,
+    "current_speed_knots": 0.73,
+    "current_direction_deg": 274.8,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.31,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 6.0,
+    "current_speed_knots": 0.61,
+    "current_direction_deg": 280.2,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.04,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 7.0,
+    "current_speed_knots": 0.76,
+    "current_direction_deg": 273.5,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.34,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 8.0,
+    "current_speed_knots": 0.97,
+    "current_direction_deg": 285.0,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.06,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 9.0,
+    "current_speed_knots": 0.52,
+    "current_direction_deg": 278.8,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.05,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 10.0,
+    "current_speed_knots": 0.7,
+    "current_direction_deg": 276.4,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.47,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 11.0,
+    "current_speed_knots": 0.82,
+    "current_direction_deg": 253.7,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.34,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 12.0,
+    "current_speed_knots": 0.79,
+    "current_direction_deg": 278.7,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.25,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 13.0,
+    "current_speed_knots": 0.57,
+    "current_direction_deg": 280.4,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.27,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 14.0,
+    "current_speed_knots": 0.83,
+    "current_direction_deg": 261.9,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.25,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 15.0,
+    "current_speed_knots": 0.57,
+    "current_direction_deg": 272.6,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.31,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 16.0,
+    "current_speed_knots": 0.7,
+    "current_direction_deg": 297.8,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.25,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 17.0,
+    "current_speed_knots": 0.52,
+    "current_direction_deg": 261.5,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.36,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 18.0,
+    "current_speed_knots": 0.54,
+    "current_direction_deg": 266.8,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.12,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 19.0,
+    "current_speed_knots": 0.63,
+    "current_direction_deg": 253.7,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 20.0,
+    "current_speed_knots": 0.53,
+    "current_direction_deg": 281.3,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.32,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 21.0,
+    "current_speed_knots": 0.63,
+    "current_direction_deg": 274.9,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.35,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -70.0,
+    "longitude": 22.0,
+    "current_speed_knots": 0.7,
+    "current_direction_deg": 267.7,
+    "sea_surface_temp_c": -1.9,
+    "salinity_psu": 34.07,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 0.0,
+    "current_speed_knots": 0.52,
+    "current_direction_deg": 286.0,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 33.96,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 1.0,
+    "current_speed_knots": 0.77,
+    "current_direction_deg": 262.3,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.2,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 2.0,
+    "current_speed_knots": 0.72,
+    "current_direction_deg": 286.3,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 33.93,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 3.0,
+    "current_speed_knots": 0.71,
+    "current_direction_deg": 289.8,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.28,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 4.0,
+    "current_speed_knots": 0.63,
+    "current_direction_deg": 262.2,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 33.95,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 5.0,
+    "current_speed_knots": 0.79,
+    "current_direction_deg": 288.6,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.19,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 6.0,
+    "current_speed_knots": 0.55,
+    "current_direction_deg": 285.8,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.39,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 7.0,
+    "current_speed_knots": 0.47,
+    "current_direction_deg": 276.6,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.28,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 8.0,
+    "current_speed_knots": 0.63,
+    "current_direction_deg": 255.4,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.2,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 9.0,
+    "current_speed_knots": 0.76,
+    "current_direction_deg": 275.1,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.22,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 10.0,
+    "current_speed_knots": 0.76,
+    "current_direction_deg": 270.7,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.06,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 11.0,
+    "current_speed_knots": 0.82,
+    "current_direction_deg": 284.4,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.3,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 12.0,
+    "current_speed_knots": 0.8,
+    "current_direction_deg": 269.2,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.18,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 13.0,
+    "current_speed_knots": 0.61,
+    "current_direction_deg": 260.4,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.22,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 14.0,
+    "current_speed_knots": 0.63,
+    "current_direction_deg": 280.4,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.13,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 15.0,
+    "current_speed_knots": 0.58,
+    "current_direction_deg": 254.7,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.07,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 16.0,
+    "current_speed_knots": 0.57,
+    "current_direction_deg": 279.2,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.29,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 17.0,
+    "current_speed_knots": 0.68,
+    "current_direction_deg": 279.6,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.11,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 18.0,
+    "current_speed_knots": 0.57,
+    "current_direction_deg": 285.3,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.3,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 19.0,
+    "current_speed_knots": 0.69,
+    "current_direction_deg": 267.9,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.03,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 20.0,
+    "current_speed_knots": 0.83,
+    "current_direction_deg": 276.4,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.28,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 21.0,
+    "current_speed_knots": 0.75,
+    "current_direction_deg": 282.6,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 34.25,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -69.0,
+    "longitude": 22.0,
+    "current_speed_knots": 0.66,
+    "current_direction_deg": 266.9,
+    "sea_surface_temp_c": -1.85,
+    "salinity_psu": 33.71,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 0.0,
+    "current_speed_knots": 0.6,
+    "current_direction_deg": 260.4,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.62,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 1.0,
+    "current_speed_knots": 0.64,
+    "current_direction_deg": 256.0,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.15,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 2.0,
+    "current_speed_knots": 0.52,
+    "current_direction_deg": 278.4,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.05,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 3.0,
+    "current_speed_knots": 0.74,
+    "current_direction_deg": 284.6,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.21,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 4.0,
+    "current_speed_knots": 0.43,
+    "current_direction_deg": 256.8,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 5.0,
+    "current_speed_knots": 0.74,
+    "current_direction_deg": 255.4,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.28,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 6.0,
+    "current_speed_knots": 0.66,
+    "current_direction_deg": 272.5,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 33.98,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 7.0,
+    "current_speed_knots": 0.61,
+    "current_direction_deg": 295.2,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 33.99,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 8.0,
+    "current_speed_knots": 0.62,
+    "current_direction_deg": 276.5,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 33.94,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 9.0,
+    "current_speed_knots": 0.69,
+    "current_direction_deg": 259.8,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.05,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 10.0,
+    "current_speed_knots": 0.6,
+    "current_direction_deg": 281.3,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 11.0,
+    "current_speed_knots": 0.52,
+    "current_direction_deg": 287.8,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.25,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 12.0,
+    "current_speed_knots": 0.53,
+    "current_direction_deg": 284.0,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 13.0,
+    "current_speed_knots": 0.67,
+    "current_direction_deg": 271.7,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.31,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 14.0,
+    "current_speed_knots": 0.64,
+    "current_direction_deg": 265.2,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.27,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 15.0,
+    "current_speed_knots": 0.61,
+    "current_direction_deg": 288.7,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 16.0,
+    "current_speed_knots": 0.67,
+    "current_direction_deg": 288.6,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.02,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 17.0,
+    "current_speed_knots": 0.64,
+    "current_direction_deg": 274.8,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.03,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 18.0,
+    "current_speed_knots": 0.62,
+    "current_direction_deg": 246.0,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.33,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 19.0,
+    "current_speed_knots": 0.67,
+    "current_direction_deg": 276.4,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.19,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 20.0,
+    "current_speed_knots": 0.54,
+    "current_direction_deg": 276.8,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.29,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 21.0,
+    "current_speed_knots": 0.61,
+    "current_direction_deg": 263.2,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.21,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -68.0,
+    "longitude": 22.0,
+    "current_speed_knots": 0.72,
+    "current_direction_deg": 280.4,
+    "sea_surface_temp_c": -1.8,
+    "salinity_psu": 34.09,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 0.0,
+    "current_speed_knots": 0.57,
+    "current_direction_deg": 270.3,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.09,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 1.0,
+    "current_speed_knots": 0.68,
+    "current_direction_deg": 275.3,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.33,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 2.0,
+    "current_speed_knots": 0.56,
+    "current_direction_deg": 260.2,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.14,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 3.0,
+    "current_speed_knots": 0.8,
+    "current_direction_deg": 267.3,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 33.85,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 4.0,
+    "current_speed_knots": 0.71,
+    "current_direction_deg": 258.7,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.07,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 5.0,
+    "current_speed_knots": 0.71,
+    "current_direction_deg": 287.9,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.22,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 6.0,
+    "current_speed_knots": 0.65,
+    "current_direction_deg": 287.2,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.4,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 7.0,
+    "current_speed_knots": 0.63,
+    "current_direction_deg": 286.3,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 8.0,
+    "current_speed_knots": 0.82,
+    "current_direction_deg": 267.3,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 33.89,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 9.0,
+    "current_speed_knots": 0.79,
+    "current_direction_deg": 279.1,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.35,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 10.0,
+    "current_speed_knots": 0.56,
+    "current_direction_deg": 287.6,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.22,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 11.0,
+    "current_speed_knots": 0.67,
+    "current_direction_deg": 255.5,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.21,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 12.0,
+    "current_speed_knots": 0.62,
+    "current_direction_deg": 249.1,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.29,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 13.0,
+    "current_speed_knots": 0.56,
+    "current_direction_deg": 269.9,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.16,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 14.0,
+    "current_speed_knots": 0.49,
+    "current_direction_deg": 274.2,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.04,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 15.0,
+    "current_speed_knots": 0.57,
+    "current_direction_deg": 275.4,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.38,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 16.0,
+    "current_speed_knots": 0.85,
+    "current_direction_deg": 269.8,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.08,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 17.0,
+    "current_speed_knots": 0.65,
+    "current_direction_deg": 267.8,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 18.0,
+    "current_speed_knots": 0.67,
+    "current_direction_deg": 269.6,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.1,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 19.0,
+    "current_speed_knots": 0.67,
+    "current_direction_deg": 268.6,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.21,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 20.0,
+    "current_speed_knots": 0.69,
+    "current_direction_deg": 268.2,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.29,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 21.0,
+    "current_speed_knots": 0.88,
+    "current_direction_deg": 245.6,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.17,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -67.0,
+    "longitude": 22.0,
+    "current_speed_knots": 0.57,
+    "current_direction_deg": 269.8,
+    "sea_surface_temp_c": -1.75,
+    "salinity_psu": 34.15,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 0.0,
+    "current_speed_knots": 0.57,
+    "current_direction_deg": 281.4,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.07,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 1.0,
+    "current_speed_knots": 0.68,
+    "current_direction_deg": 286.7,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.31,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 2.0,
+    "current_speed_knots": 0.72,
+    "current_direction_deg": 293.2,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.12,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 3.0,
+    "current_speed_knots": 0.57,
+    "current_direction_deg": 256.5,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.11,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 4.0,
+    "current_speed_knots": 0.84,
+    "current_direction_deg": 274.3,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.2,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 5.0,
+    "current_speed_knots": 0.57,
+    "current_direction_deg": 282.5,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 33.89,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 6.0,
+    "current_speed_knots": 0.61,
+    "current_direction_deg": 272.8,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.28,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 7.0,
+    "current_speed_knots": 0.68,
+    "current_direction_deg": 286.1,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 33.8,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 8.0,
+    "current_speed_knots": 0.6,
+    "current_direction_deg": 305.3,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.17,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 9.0,
+    "current_speed_knots": 0.65,
+    "current_direction_deg": 256.4,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 33.99,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 10.0,
+    "current_speed_knots": 0.6,
+    "current_direction_deg": 271.5,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 11.0,
+    "current_speed_knots": 0.7,
+    "current_direction_deg": 272.0,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.2,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 12.0,
+    "current_speed_knots": 0.72,
+    "current_direction_deg": 275.5,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 13.0,
+    "current_speed_knots": 0.64,
+    "current_direction_deg": 270.3,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.18,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 14.0,
+    "current_speed_knots": 0.61,
+    "current_direction_deg": 280.1,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.27,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 15.0,
+    "current_speed_knots": 0.6,
+    "current_direction_deg": 302.8,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.35,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 16.0,
+    "current_speed_knots": 0.71,
+    "current_direction_deg": 283.4,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.15,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 17.0,
+    "current_speed_knots": 0.58,
+    "current_direction_deg": 266.9,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.12,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 18.0,
+    "current_speed_knots": 0.59,
+    "current_direction_deg": 262.8,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.4,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 19.0,
+    "current_speed_knots": 0.75,
+    "current_direction_deg": 292.6,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.09,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 20.0,
+    "current_speed_knots": 0.66,
+    "current_direction_deg": 275.0,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.3,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 21.0,
+    "current_speed_knots": 0.5,
+    "current_direction_deg": 259.0,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 34.13,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -66.0,
+    "longitude": 22.0,
+    "current_speed_knots": 0.56,
+    "current_direction_deg": 282.9,
+    "sea_surface_temp_c": -1.7,
+    "salinity_psu": 33.89,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 0.0,
+    "current_speed_knots": 0.71,
+    "current_direction_deg": 275.3,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.06,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 1.0,
+    "current_speed_knots": 0.64,
+    "current_direction_deg": 272.8,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 33.85,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 2.0,
+    "current_speed_knots": 0.56,
+    "current_direction_deg": 277.6,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.41,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 3.0,
+    "current_speed_knots": 0.66,
+    "current_direction_deg": 284.1,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 4.0,
+    "current_speed_knots": 0.61,
+    "current_direction_deg": 281.3,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.24,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 5.0,
+    "current_speed_knots": 0.75,
+    "current_direction_deg": 285.1,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.01,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 6.0,
+    "current_speed_knots": 0.7,
+    "current_direction_deg": 283.0,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 7.0,
+    "current_speed_knots": 0.49,
+    "current_direction_deg": 290.6,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.19,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 8.0,
+    "current_speed_knots": 0.74,
+    "current_direction_deg": 286.1,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.14,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 9.0,
+    "current_speed_knots": 0.7,
+    "current_direction_deg": 303.1,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.24,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 10.0,
+    "current_speed_knots": 0.47,
+    "current_direction_deg": 263.5,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 11.0,
+    "current_speed_knots": 0.58,
+    "current_direction_deg": 257.5,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 12.0,
+    "current_speed_knots": 0.73,
+    "current_direction_deg": 262.6,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.33,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 13.0,
+    "current_speed_knots": 0.5,
+    "current_direction_deg": 259.2,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.29,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 14.0,
+    "current_speed_knots": 0.58,
+    "current_direction_deg": 274.9,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.16,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 15.0,
+    "current_speed_knots": 0.45,
+    "current_direction_deg": 265.7,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 16.0,
+    "current_speed_knots": 0.69,
+    "current_direction_deg": 268.3,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.21,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 17.0,
+    "current_speed_knots": 0.6,
+    "current_direction_deg": 273.0,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 33.94,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 18.0,
+    "current_speed_knots": 0.59,
+    "current_direction_deg": 277.5,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 19.0,
+    "current_speed_knots": 0.75,
+    "current_direction_deg": 277.6,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.04,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 20.0,
+    "current_speed_knots": 0.59,
+    "current_direction_deg": 261.5,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.09,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 21.0,
+    "current_speed_knots": 0.72,
+    "current_direction_deg": 279.1,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.17,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -65.0,
+    "longitude": 22.0,
+    "current_speed_knots": 0.68,
+    "current_direction_deg": 269.4,
+    "sea_surface_temp_c": -1.65,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 0.0,
+    "current_speed_knots": 0.55,
+    "current_direction_deg": 313.9,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.18,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 1.0,
+    "current_speed_knots": 0.75,
+    "current_direction_deg": 285.5,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.07,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 2.0,
+    "current_speed_knots": 0.61,
+    "current_direction_deg": 249.6,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.24,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 3.0,
+    "current_speed_knots": 0.54,
+    "current_direction_deg": 226.9,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.11,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 4.0,
+    "current_speed_knots": 0.67,
+    "current_direction_deg": 271.1,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.49,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 5.0,
+    "current_speed_knots": 0.74,
+    "current_direction_deg": 279.2,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 6.0,
+    "current_speed_knots": 0.62,
+    "current_direction_deg": 262.8,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.34,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 7.0,
+    "current_speed_knots": 0.71,
+    "current_direction_deg": 294.6,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 33.83,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 8.0,
+    "current_speed_knots": 0.7,
+    "current_direction_deg": 286.7,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 33.91,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 9.0,
+    "current_speed_knots": 0.44,
+    "current_direction_deg": 276.7,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 33.94,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 10.0,
+    "current_speed_knots": 0.5,
+    "current_direction_deg": 245.9,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.46,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 11.0,
+    "current_speed_knots": 0.63,
+    "current_direction_deg": 270.9,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 12.0,
+    "current_speed_knots": 0.57,
+    "current_direction_deg": 279.5,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.28,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 13.0,
+    "current_speed_knots": 0.53,
+    "current_direction_deg": 246.9,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 33.87,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 14.0,
+    "current_speed_knots": 0.33,
+    "current_direction_deg": 284.1,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.1,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 15.0,
+    "current_speed_knots": 0.56,
+    "current_direction_deg": 261.1,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.12,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 16.0,
+    "current_speed_knots": 0.64,
+    "current_direction_deg": 278.4,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.1,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 17.0,
+    "current_speed_knots": 0.52,
+    "current_direction_deg": 265.6,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.44,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 18.0,
+    "current_speed_knots": 0.78,
+    "current_direction_deg": 274.0,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.33,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 19.0,
+    "current_speed_knots": 0.75,
+    "current_direction_deg": 281.0,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.05,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 20.0,
+    "current_speed_knots": 0.78,
+    "current_direction_deg": 278.1,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.06,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 21.0,
+    "current_speed_knots": 0.76,
+    "current_direction_deg": 278.3,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.4,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -64.0,
+    "longitude": 22.0,
+    "current_speed_knots": 0.79,
+    "current_direction_deg": 262.3,
+    "sea_surface_temp_c": -1.6,
+    "salinity_psu": 34.27,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 0.0,
+    "current_speed_knots": 0.86,
+    "current_direction_deg": 82.3,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.21,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 1.0,
+    "current_speed_knots": 0.78,
+    "current_direction_deg": 101.9,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.08,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 2.0,
+    "current_speed_knots": 0.91,
+    "current_direction_deg": 111.2,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.08,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 3.0,
+    "current_speed_knots": 0.8,
+    "current_direction_deg": 91.3,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 4.0,
+    "current_speed_knots": 0.9,
+    "current_direction_deg": 68.7,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.07,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 5.0,
+    "current_speed_knots": 0.98,
+    "current_direction_deg": 82.3,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 6.0,
+    "current_speed_knots": 0.73,
+    "current_direction_deg": 87.8,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.39,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 7.0,
+    "current_speed_knots": 0.88,
+    "current_direction_deg": 72.7,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.24,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 8.0,
+    "current_speed_knots": 0.87,
+    "current_direction_deg": 82.5,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.39,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 9.0,
+    "current_speed_knots": 0.95,
+    "current_direction_deg": 86.5,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.09,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 10.0,
+    "current_speed_knots": 0.79,
+    "current_direction_deg": 89.2,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 33.97,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 11.0,
+    "current_speed_knots": 1.01,
+    "current_direction_deg": 103.9,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.06,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 12.0,
+    "current_speed_knots": 0.85,
+    "current_direction_deg": 96.5,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.18,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 13.0,
+    "current_speed_knots": 0.9,
+    "current_direction_deg": 67.6,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.19,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 14.0,
+    "current_speed_knots": 0.92,
+    "current_direction_deg": 101.5,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.46,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 15.0,
+    "current_speed_knots": 0.76,
+    "current_direction_deg": 113.4,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.19,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 16.0,
+    "current_speed_knots": 0.71,
+    "current_direction_deg": 90.8,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.29,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 17.0,
+    "current_speed_knots": 0.8,
+    "current_direction_deg": 106.1,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.0,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 18.0,
+    "current_speed_knots": 0.88,
+    "current_direction_deg": 93.1,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.29,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 19.0,
+    "current_speed_knots": 1.03,
+    "current_direction_deg": 89.0,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.0,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 20.0,
+    "current_speed_knots": 0.72,
+    "current_direction_deg": 69.0,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.27,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 21.0,
+    "current_speed_knots": 0.7,
+    "current_direction_deg": 97.8,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.12,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -63.0,
+    "longitude": 22.0,
+    "current_speed_knots": 0.89,
+    "current_direction_deg": 79.6,
+    "sea_surface_temp_c": -0.95,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 0.0,
+    "current_speed_knots": 0.96,
+    "current_direction_deg": 100.7,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 33.94,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 1.0,
+    "current_speed_knots": 1.09,
+    "current_direction_deg": 90.8,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.33,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 2.0,
+    "current_speed_knots": 1.07,
+    "current_direction_deg": 89.2,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.04,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 3.0,
+    "current_speed_knots": 1.07,
+    "current_direction_deg": 99.5,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.32,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 4.0,
+    "current_speed_knots": 1.06,
+    "current_direction_deg": 92.2,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.14,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 5.0,
+    "current_speed_knots": 0.99,
+    "current_direction_deg": 89.1,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.28,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 6.0,
+    "current_speed_knots": 0.95,
+    "current_direction_deg": 87.5,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.16,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 7.0,
+    "current_speed_knots": 1.03,
+    "current_direction_deg": 105.3,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.03,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 8.0,
+    "current_speed_knots": 1.14,
+    "current_direction_deg": 85.4,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.19,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 9.0,
+    "current_speed_knots": 1.05,
+    "current_direction_deg": 92.3,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.07,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 10.0,
+    "current_speed_knots": 1.08,
+    "current_direction_deg": 92.5,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.2,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 11.0,
+    "current_speed_knots": 0.93,
+    "current_direction_deg": 80.3,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.41,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 12.0,
+    "current_speed_knots": 0.95,
+    "current_direction_deg": 89.8,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.15,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 13.0,
+    "current_speed_knots": 0.81,
+    "current_direction_deg": 72.2,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.1,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 14.0,
+    "current_speed_knots": 0.84,
+    "current_direction_deg": 77.3,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.07,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 15.0,
+    "current_speed_knots": 1.02,
+    "current_direction_deg": 78.2,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.21,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 16.0,
+    "current_speed_knots": 1.05,
+    "current_direction_deg": 84.8,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.06,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 17.0,
+    "current_speed_knots": 0.99,
+    "current_direction_deg": 97.3,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.22,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 18.0,
+    "current_speed_knots": 1.02,
+    "current_direction_deg": 97.8,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.24,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 19.0,
+    "current_speed_knots": 0.99,
+    "current_direction_deg": 99.6,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 33.96,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 20.0,
+    "current_speed_knots": 1.13,
+    "current_direction_deg": 94.7,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.31,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 21.0,
+    "current_speed_knots": 0.95,
+    "current_direction_deg": 92.6,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.25,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -62.0,
+    "longitude": 22.0,
+    "current_speed_knots": 1.14,
+    "current_direction_deg": 88.9,
+    "sea_surface_temp_c": -0.6,
+    "salinity_psu": 34.3,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 0.0,
+    "current_speed_knots": 1.22,
+    "current_direction_deg": 85.5,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.15,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 1.0,
+    "current_speed_knots": 1.11,
+    "current_direction_deg": 71.9,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.08,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 2.0,
+    "current_speed_knots": 1.31,
+    "current_direction_deg": 94.9,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.27,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 3.0,
+    "current_speed_knots": 1.05,
+    "current_direction_deg": 78.9,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.5,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 4.0,
+    "current_speed_knots": 1.07,
+    "current_direction_deg": 74.2,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.47,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 5.0,
+    "current_speed_knots": 1.26,
+    "current_direction_deg": 82.4,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 6.0,
+    "current_speed_knots": 1.1,
+    "current_direction_deg": 117.8,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.29,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 7.0,
+    "current_speed_knots": 1.04,
+    "current_direction_deg": 90.3,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.35,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 8.0,
+    "current_speed_knots": 0.95,
+    "current_direction_deg": 93.7,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.08,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 9.0,
+    "current_speed_knots": 1.21,
+    "current_direction_deg": 100.5,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.03,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 10.0,
+    "current_speed_knots": 1.18,
+    "current_direction_deg": 101.4,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.34,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 11.0,
+    "current_speed_knots": 1.12,
+    "current_direction_deg": 92.8,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.35,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 12.0,
+    "current_speed_knots": 1.19,
+    "current_direction_deg": 84.2,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.42,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 13.0,
+    "current_speed_knots": 1.2,
+    "current_direction_deg": 86.6,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.36,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 14.0,
+    "current_speed_knots": 1.15,
+    "current_direction_deg": 97.0,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.12,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 15.0,
+    "current_speed_knots": 1.36,
+    "current_direction_deg": 85.4,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 16.0,
+    "current_speed_knots": 1.07,
+    "current_direction_deg": 92.0,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 17.0,
+    "current_speed_knots": 1.17,
+    "current_direction_deg": 84.5,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.1,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 18.0,
+    "current_speed_knots": 1.01,
+    "current_direction_deg": 99.3,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.18,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 19.0,
+    "current_speed_knots": 1.16,
+    "current_direction_deg": 87.1,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.01,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 20.0,
+    "current_speed_knots": 1.19,
+    "current_direction_deg": 87.0,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.32,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 21.0,
+    "current_speed_knots": 1.06,
+    "current_direction_deg": 87.3,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.13,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -61.0,
+    "longitude": 22.0,
+    "current_speed_knots": 1.07,
+    "current_direction_deg": 92.0,
+    "sea_surface_temp_c": -0.25,
+    "salinity_psu": 34.32,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 0.0,
+    "current_speed_knots": 1.19,
+    "current_direction_deg": 98.7,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 33.97,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 1.0,
+    "current_speed_knots": 1.42,
+    "current_direction_deg": 87.7,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.14,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 2.0,
+    "current_speed_knots": 1.17,
+    "current_direction_deg": 88.5,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.13,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 3.0,
+    "current_speed_knots": 1.19,
+    "current_direction_deg": 73.0,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.02,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 4.0,
+    "current_speed_knots": 1.29,
+    "current_direction_deg": 97.5,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.1,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 5.0,
+    "current_speed_knots": 1.29,
+    "current_direction_deg": 104.3,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 33.89,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 6.0,
+    "current_speed_knots": 1.15,
+    "current_direction_deg": 90.7,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.2,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 7.0,
+    "current_speed_knots": 1.14,
+    "current_direction_deg": 96.6,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.19,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 8.0,
+    "current_speed_knots": 1.04,
+    "current_direction_deg": 101.9,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.16,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 9.0,
+    "current_speed_knots": 1.18,
+    "current_direction_deg": 91.3,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.24,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 10.0,
+    "current_speed_knots": 1.28,
+    "current_direction_deg": 78.9,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.31,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 11.0,
+    "current_speed_knots": 1.29,
+    "current_direction_deg": 89.5,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.44,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 12.0,
+    "current_speed_knots": 1.22,
+    "current_direction_deg": 101.9,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.18,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 13.0,
+    "current_speed_knots": 1.26,
+    "current_direction_deg": 107.7,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 14.0,
+    "current_speed_knots": 1.08,
+    "current_direction_deg": 74.3,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.05,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 15.0,
+    "current_speed_knots": 1.11,
+    "current_direction_deg": 98.0,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.19,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 16.0,
+    "current_speed_knots": 1.22,
+    "current_direction_deg": 70.8,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.35,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 17.0,
+    "current_speed_knots": 1.27,
+    "current_direction_deg": 114.4,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.1,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 18.0,
+    "current_speed_knots": 1.19,
+    "current_direction_deg": 68.9,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.35,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 19.0,
+    "current_speed_knots": 1.18,
+    "current_direction_deg": 91.8,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 33.94,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 20.0,
+    "current_speed_knots": 1.14,
+    "current_direction_deg": 92.7,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.04,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 21.0,
+    "current_speed_knots": 1.23,
+    "current_direction_deg": 97.9,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.29,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -60.0,
+    "longitude": 22.0,
+    "current_speed_knots": 1.26,
+    "current_direction_deg": 86.9,
+    "sea_surface_temp_c": 0.1,
+    "salinity_psu": 34.14,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 0.0,
+    "current_speed_knots": 1.05,
+    "current_direction_deg": 111.3,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.21,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 1.0,
+    "current_speed_knots": 1.16,
+    "current_direction_deg": 95.7,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.08,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 2.0,
+    "current_speed_knots": 1.07,
+    "current_direction_deg": 103.6,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 3.0,
+    "current_speed_knots": 1.22,
+    "current_direction_deg": 81.9,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.05,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 4.0,
+    "current_speed_knots": 1.08,
+    "current_direction_deg": 83.3,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.13,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 5.0,
+    "current_speed_knots": 1.06,
+    "current_direction_deg": 101.5,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.19,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 6.0,
+    "current_speed_knots": 1.19,
+    "current_direction_deg": 108.3,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 33.97,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 7.0,
+    "current_speed_knots": 1.15,
+    "current_direction_deg": 96.1,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.04,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 8.0,
+    "current_speed_knots": 1.04,
+    "current_direction_deg": 93.9,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.06,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 9.0,
+    "current_speed_knots": 1.19,
+    "current_direction_deg": 88.5,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.11,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 10.0,
+    "current_speed_knots": 1.17,
+    "current_direction_deg": 88.8,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.09,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 11.0,
+    "current_speed_knots": 1.27,
+    "current_direction_deg": 90.2,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.34,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 12.0,
+    "current_speed_knots": 1.19,
+    "current_direction_deg": 90.3,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.03,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 13.0,
+    "current_speed_knots": 1.23,
+    "current_direction_deg": 74.9,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 33.94,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 14.0,
+    "current_speed_knots": 1.14,
+    "current_direction_deg": 94.4,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.04,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 15.0,
+    "current_speed_knots": 1.23,
+    "current_direction_deg": 99.1,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.01,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 16.0,
+    "current_speed_knots": 1.35,
+    "current_direction_deg": 100.7,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.27,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 17.0,
+    "current_speed_knots": 0.98,
+    "current_direction_deg": 101.6,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.35,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 18.0,
+    "current_speed_knots": 1.24,
+    "current_direction_deg": 110.8,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.18,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 19.0,
+    "current_speed_knots": 1.3,
+    "current_direction_deg": 92.0,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.02,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 20.0,
+    "current_speed_knots": 1.03,
+    "current_direction_deg": 88.1,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.0,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 21.0,
+    "current_speed_knots": 1.24,
+    "current_direction_deg": 102.4,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.08,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -59.0,
+    "longitude": 22.0,
+    "current_speed_knots": 1.24,
+    "current_direction_deg": 78.1,
+    "sea_surface_temp_c": 0.45,
+    "salinity_psu": 34.15,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 0.0,
+    "current_speed_knots": 1.03,
+    "current_direction_deg": 106.6,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.52,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 1.0,
+    "current_speed_knots": 1.17,
+    "current_direction_deg": 92.6,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.2,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 2.0,
+    "current_speed_knots": 1.15,
+    "current_direction_deg": 109.5,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.35,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 3.0,
+    "current_speed_knots": 1.0,
+    "current_direction_deg": 82.5,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.31,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 4.0,
+    "current_speed_knots": 0.99,
+    "current_direction_deg": 107.1,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.12,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 5.0,
+    "current_speed_knots": 1.1,
+    "current_direction_deg": 98.1,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.12,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 6.0,
+    "current_speed_knots": 1.14,
+    "current_direction_deg": 82.0,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.06,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 7.0,
+    "current_speed_knots": 1.03,
+    "current_direction_deg": 82.7,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.01,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 8.0,
+    "current_speed_knots": 1.21,
+    "current_direction_deg": 102.4,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.17,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 9.0,
+    "current_speed_knots": 0.96,
+    "current_direction_deg": 82.8,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.14,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 10.0,
+    "current_speed_knots": 1.21,
+    "current_direction_deg": 92.8,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.06,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 11.0,
+    "current_speed_knots": 1.14,
+    "current_direction_deg": 97.6,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.19,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 12.0,
+    "current_speed_knots": 1.05,
+    "current_direction_deg": 102.1,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.05,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 13.0,
+    "current_speed_knots": 1.11,
+    "current_direction_deg": 88.0,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.18,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 14.0,
+    "current_speed_knots": 1.08,
+    "current_direction_deg": 90.1,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.4,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 15.0,
+    "current_speed_knots": 1.19,
+    "current_direction_deg": 108.4,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.29,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 16.0,
+    "current_speed_knots": 1.14,
+    "current_direction_deg": 93.5,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.12,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 17.0,
+    "current_speed_knots": 1.24,
+    "current_direction_deg": 88.6,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.21,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 18.0,
+    "current_speed_knots": 0.89,
+    "current_direction_deg": 99.4,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.39,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 19.0,
+    "current_speed_knots": 1.15,
+    "current_direction_deg": 104.3,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.04,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 20.0,
+    "current_speed_knots": 1.14,
+    "current_direction_deg": 94.4,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.34,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 21.0,
+    "current_speed_knots": 1.02,
+    "current_direction_deg": 115.3,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 34.18,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -58.0,
+    "longitude": 22.0,
+    "current_speed_knots": 1.32,
+    "current_direction_deg": 86.3,
+    "sea_surface_temp_c": 0.8,
+    "salinity_psu": 33.76,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 0.0,
+    "current_speed_knots": 0.99,
+    "current_direction_deg": 70.1,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.32,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 1.0,
+    "current_speed_knots": 1.04,
+    "current_direction_deg": 94.4,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.19,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 2.0,
+    "current_speed_knots": 1.08,
+    "current_direction_deg": 101.0,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.16,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 3.0,
+    "current_speed_knots": 0.98,
+    "current_direction_deg": 94.0,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 33.99,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 4.0,
+    "current_speed_knots": 0.94,
+    "current_direction_deg": 89.0,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.06,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 5.0,
+    "current_speed_knots": 1.03,
+    "current_direction_deg": 75.4,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.22,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 6.0,
+    "current_speed_knots": 1.02,
+    "current_direction_deg": 101.2,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.08,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 7.0,
+    "current_speed_knots": 0.98,
+    "current_direction_deg": 103.7,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.33,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 8.0,
+    "current_speed_knots": 0.96,
+    "current_direction_deg": 61.8,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.05,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 9.0,
+    "current_speed_knots": 0.93,
+    "current_direction_deg": 96.6,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.27,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 10.0,
+    "current_speed_knots": 0.96,
+    "current_direction_deg": 93.3,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.28,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 11.0,
+    "current_speed_knots": 0.99,
+    "current_direction_deg": 94.8,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 12.0,
+    "current_speed_knots": 1.05,
+    "current_direction_deg": 69.8,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.17,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 13.0,
+    "current_speed_knots": 0.87,
+    "current_direction_deg": 100.3,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.21,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 14.0,
+    "current_speed_knots": 0.87,
+    "current_direction_deg": 83.3,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.07,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 15.0,
+    "current_speed_knots": 1.18,
+    "current_direction_deg": 102.5,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.1,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 16.0,
+    "current_speed_knots": 1.13,
+    "current_direction_deg": 84.1,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.0,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 17.0,
+    "current_speed_knots": 0.99,
+    "current_direction_deg": 80.4,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.32,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 18.0,
+    "current_speed_knots": 1.14,
+    "current_direction_deg": 93.3,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 33.79,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 19.0,
+    "current_speed_knots": 0.91,
+    "current_direction_deg": 98.7,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 33.88,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 20.0,
+    "current_speed_knots": 0.93,
+    "current_direction_deg": 100.0,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.25,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 21.0,
+    "current_speed_knots": 0.99,
+    "current_direction_deg": 73.6,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.11,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -57.0,
+    "longitude": 22.0,
+    "current_speed_knots": 1.0,
+    "current_direction_deg": 96.1,
+    "sea_surface_temp_c": 1.15,
+    "salinity_psu": 34.49,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 0.0,
+    "current_speed_knots": 0.94,
+    "current_direction_deg": 94.2,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.25,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 1.0,
+    "current_speed_knots": 0.93,
+    "current_direction_deg": 101.2,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.06,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 2.0,
+    "current_speed_knots": 0.71,
+    "current_direction_deg": 108.7,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.22,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 3.0,
+    "current_speed_knots": 0.89,
+    "current_direction_deg": 118.3,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.2,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 4.0,
+    "current_speed_knots": 0.86,
+    "current_direction_deg": 103.1,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.26,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 5.0,
+    "current_speed_knots": 0.98,
+    "current_direction_deg": 72.4,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.12,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 6.0,
+    "current_speed_knots": 0.91,
+    "current_direction_deg": 87.6,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 7.0,
+    "current_speed_knots": 0.77,
+    "current_direction_deg": 95.0,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.14,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 8.0,
+    "current_speed_knots": 0.65,
+    "current_direction_deg": 113.7,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.19,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 9.0,
+    "current_speed_knots": 0.81,
+    "current_direction_deg": 76.4,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.3,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 10.0,
+    "current_speed_knots": 0.72,
+    "current_direction_deg": 93.5,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.33,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 11.0,
+    "current_speed_knots": 0.92,
+    "current_direction_deg": 72.7,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.22,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 12.0,
+    "current_speed_knots": 0.76,
+    "current_direction_deg": 82.4,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.15,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 13.0,
+    "current_speed_knots": 0.86,
+    "current_direction_deg": 89.2,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.28,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 14.0,
+    "current_speed_knots": 0.76,
+    "current_direction_deg": 86.7,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.48,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 15.0,
+    "current_speed_knots": 0.67,
+    "current_direction_deg": 90.3,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.16,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 16.0,
+    "current_speed_knots": 0.74,
+    "current_direction_deg": 91.9,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 33.98,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 17.0,
+    "current_speed_knots": 0.83,
+    "current_direction_deg": 87.2,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.15,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 18.0,
+    "current_speed_knots": 0.74,
+    "current_direction_deg": 87.7,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.23,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 19.0,
+    "current_speed_knots": 0.99,
+    "current_direction_deg": 75.6,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.2,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 20.0,
+    "current_speed_knots": 0.89,
+    "current_direction_deg": 96.7,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.25,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 21.0,
+    "current_speed_knots": 0.78,
+    "current_direction_deg": 105.1,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.32,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  },
+  {
+    "latitude": -56.0,
+    "longitude": 22.0,
+    "current_speed_knots": 0.89,
+    "current_direction_deg": 93.3,
+    "sea_surface_temp_c": 1.5,
+    "salinity_psu": 34.41,
+    "source": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION",
+    "timestamp": "2026-09-21T13:29:46.827683"
+  }
+]

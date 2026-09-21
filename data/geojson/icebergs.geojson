@@ -1,0 +1,145 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9,
+          -64.4
+        ]
+      },
+      "properties": {
+        "id": "ICE-042",
+        "name": "Iceberg ICE-042 (Hazard Candidate)",
+        "latitude": -64.4,
+        "longitude": 10.9,
+        "size_category": "Large Tabular",
+        "length_m": 950.0,
+        "width_m": 580.0,
+        "height_m": 38.0,
+        "mass_mt": 2100000.0,
+        "velocity_knots": 1.15,
+        "direction_deg": 272.0,
+        "confidence": 0.94,
+        "source": "DEMO DATA",
+        "status": "Active Tracking",
+        "last_observed": "2026-09-21T13:29:46.830683",
+        "disclaimer": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8,
+          -62.8
+        ]
+      },
+      "properties": {
+        "id": "ICE-A23a",
+        "name": "ICE-A23a Giant Fragment",
+        "latitude": -62.8,
+        "longitude": 6.8,
+        "size_category": "Mega Tabular",
+        "length_m": 3500.0,
+        "width_m": 2200.0,
+        "height_m": 55.0,
+        "mass_mt": 35000000.0,
+        "velocity_knots": 1.4,
+        "direction_deg": 285.0,
+        "confidence": 0.98,
+        "source": "DEMO DATA",
+        "status": "Active Tracking",
+        "last_observed": "2026-09-21T13:29:46.830683",
+        "disclaimer": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6,
+          -66.8
+        ]
+      },
+      "properties": {
+        "id": "ICE-089",
+        "name": "Iceberg ICE-089",
+        "latitude": -66.8,
+        "longitude": 13.6,
+        "size_category": "Medium Pinnacle",
+        "length_m": 420.0,
+        "width_m": 260.0,
+        "height_m": 28.0,
+        "mass_mt": 800000.0,
+        "velocity_knots": 0.65,
+        "direction_deg": 260.0,
+        "confidence": 0.89,
+        "source": "DEMO DATA",
+        "status": "Active Tracking",
+        "last_observed": "2026-09-21T13:29:46.830683",
+        "disclaimer": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.8,
+          -67.5
+        ]
+      },
+      "properties": {
+        "id": "ICE-104",
+        "name": "Iceberg ICE-104 (Bergy Cluster)",
+        "latitude": -67.5,
+        "longitude": 9.8,
+        "size_category": "Cluster",
+        "length_m": 280.0,
+        "width_m": 190.0,
+        "height_m": 18.0,
+        "mass_mt": 350000.0,
+        "velocity_knots": 0.72,
+        "direction_deg": 270.0,
+        "confidence": 0.91,
+        "source": "DEMO DATA",
+        "status": "Active Tracking",
+        "last_observed": "2026-09-21T13:29:46.830683",
+        "disclaimer": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8,
+          -65.3
+        ]
+      },
+      "properties": {
+        "id": "ICE-055",
+        "name": "Iceberg ICE-055",
+        "latitude": -65.3,
+        "longitude": 12.8,
+        "size_category": "Tabular",
+        "length_m": 620.0,
+        "width_m": 340.0,
+        "height_m": 32.0,
+        "mass_mt": 1200000.0,
+        "velocity_knots": 0.85,
+        "direction_deg": 275.0,
+        "confidence": 0.93,
+        "source": "DEMO DATA",
+        "status": "Active Tracking",
+        "last_observed": "2026-09-21T13:29:46.830683",
+        "disclaimer": "DEMO DATA \u2014 NOT FOR REAL-WORLD NAVIGATION"
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Maitri Research Station",
+    "country": "India",
+    "operator": "NCPOR / MoES",
+    "latitude": -70.767,
+    "longitude": 11.731,
+    "elevation_m": 117,
+    "type": "Permanent",
+    "status": "Active"
+  },
+  {
+    "name": "Bharati Research Station",
+    "country": "India",
+    "operator": "NCPOR / MoES",
+    "latitude": -69.407,
+    "longitude": 76.195,
+    "elevation_m": 35,
+    "type": "Permanent",
+    "status": "Active"
+  },
+  {
+    "name": "Dakshin Gangotri (Historic)",
+    "country": "India",
+    "operator": "NCPOR / MoES",
+    "latitude": -70.083,
+    "longitude": 12.0,
+    "elevation_m": 0,
+    "type": "Supply Base / Historical",
+    "status": "Decommissioned Base"
+  },
+  {
+    "name": "Neumayer Station III",
+    "country": "Germany",
+    "operator": "AWI",
+    "latitude": -70.674,
+    "longitude": -8.274,
+    "elevation_m": 40,
+    "type": "Permanent",
+    "status": "Active"
+  },
+  {
+    "name": "Troll Station",
+    "country": "Norway",
+    "operator": "Norwegian Polar Institute",
+    "latitude": -72.011,
+    "longitude": 2.535,
+    "elevation_m": 1275,
+    "type": "Permanent",
+    "status": "Active"
+  },
+  {
+    "name": "Halley VI Research Station",
+    "country": "United Kingdom",
+    "operator": "BAS",
+    "latitude": -75.583,
+    "longitude": -26.2,
+    "elevation_m": 30,
+    "type": "Permanent",
+    "status": "Active"
+  },
+  {
+    "name": "Syowa Station",
+    "country": "Japan",
+    "operator": "NIPR",
+    "latitude": -69.006,
+    "longitude": 39.584,
+    "elevation_m": 29,
+    "type": "Permanent",
+    "status": "Active"
+  },
+  {
+    "name": "Princess Elisabeth",
+    "country": "Belgium",
+    "operator": "International Polar Foundation",
+    "latitude": -71.949,
+    "longitude": 23.348,
+    "elevation_m": 1400,
+    "type": "Zero-Emission Summer",
+    "status": "Active"
+  }
+]
