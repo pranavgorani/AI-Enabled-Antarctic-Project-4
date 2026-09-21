@@ -210,16 +210,23 @@ DEFAULT_ICEBERGS = [
 class DemoDataGenerator:
     """Generates synthetic Antarctic navigation and environmental datasets."""
 
-    def __init__(self, base_dir: str = "."):
-        self.base_dir = base_dir
-        self.demo_dir = os.path.join(base_dir, "data", "demo")
-        self.geojson_dir = os.path.join(base_dir, "data", "geojson")
-        self.csv_dir = os.path.join(base_dir, "data", "csv")
+    def __init__(self, base_dir: str = None):
+        if base_dir is None:
+            from pathlib import Path
+            self.base_dir = str(Path(__file__).resolve().parent.parent.parent)
+        else:
+            self.base_dir = base_dir
+        self.demo_dir = os.path.join(self.base_dir, "data", "demo")
+        self.geojson_dir = os.path.join(self.base_dir, "data", "geojson")
+        self.csv_dir = os.path.join(self.base_dir, "data", "csv")
         self._ensure_directories()
 
     def _ensure_directories(self):
-        for d in [self.demo_dir, self.geojson_dir, self.csv_dir]:
-            os.makedirs(d, exist_ok=True)
+        try:
+            for d in [self.demo_dir, self.geojson_dir, self.csv_dir]:
+                os.makedirs(d, exist_ok=True)
+        except Exception:
+            pass
 
     def generate_sea_ice_grid(self, lat_min=-72.0, lat_max=-56.0, lon_min=0.0, lon_max=22.0, step=0.5) -> list[dict]:
         """

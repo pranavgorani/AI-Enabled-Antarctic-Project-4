@@ -8,12 +8,9 @@ import json
 import math
 from datetime import datetime
 from typing import Optional
-from app.providers.base import WeatherProvider, DataResponse
+from app.providers.base import WeatherProvider, DataResponse, get_cache_dir
 from app.data.demo_generator import demo_generator
 from app.core.logging import logger
-
-CACHE_DIR = os.path.join("data", "cache", "era5")
-os.makedirs(CACHE_DIR, exist_ok=True)
 
 
 class ERA5WeatherProvider(WeatherProvider):
@@ -24,7 +21,7 @@ class ERA5WeatherProvider(WeatherProvider):
     def __init__(self):
         self.cds_key = os.getenv("CDS_API_KEY", "")
         self.cds_url = os.getenv("CDS_URL", "https://cds.climate.copernicus.eu/api/v2")
-        self.cache_file = os.path.join(CACHE_DIR, "latest_era5_antarctic.json")
+        self.cache_file = os.path.join(get_cache_dir("era5"), "latest_era5_antarctic.json")
 
     @property
     def provider_name(self) -> str:

@@ -7,14 +7,12 @@ Strictly normalizes fields and NEVER fabricates missing physical measurements.
 import os
 import json
 from datetime import datetime
+from pathlib import Path
 from typing import Optional, Any
 import pandas as pd
-from app.providers.base import IcebergProvider, DataResponse
+from app.providers.base import IcebergProvider, DataResponse, get_cache_dir
 from app.data.demo_generator import demo_generator
 from app.core.logging import logger
-
-CACHE_DIR = os.path.join("data", "cache", "icebergs")
-os.makedirs(CACHE_DIR, exist_ok=True)
 
 
 class RealIcebergProvider(IcebergProvider):
@@ -24,7 +22,8 @@ class RealIcebergProvider(IcebergProvider):
     """
 
     def __init__(self):
-        self.cache_file = os.path.join(CACHE_DIR, "latest_iceberg_observations.json")
+        self.cache_file = os.path.join(get_cache_dir("icebergs"), "latest_iceberg_observations.json")
+        self.csv_path = Path(__file__).resolve().parent.parent.parent / "data" / "csv" / "icebergs.csv"
 
     @property
     def provider_name(self) -> str:
@@ -32,7 +31,7 @@ class RealIcebergProvider(IcebergProvider):
 
     @property
     def is_available(self) -> bool:
-        return os.path.exists(self.cache_file) or os.path.exists("data/csv/icebergs.csv")
+        return os.path.exists(self.cache_file) or self.csv_path.exists()
 
     @staticmethod
     def normalize_observation(raw: dict) -> dict:

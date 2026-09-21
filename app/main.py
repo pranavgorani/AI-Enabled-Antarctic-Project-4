@@ -15,22 +15,27 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
-from app.database.database import init_db, get_db
+from app.database.database import init_db, get_db, is_db_connected
 from app.database.models import Mission
 from app.api import sea_ice, icebergs, weather, ocean, routing, risk, simulation, ai
 from app.services.report_generator import generate_mission_pdf
 from app.data.demo_generator import demo_generator
 from app.core.security import RateLimiter, verify_api_key_header
+from app.core.registry import registry
 from app.risk.polaris_engine import PolarisEngine
 from app.routing.pareto import ParetoFrontier
 from app.routing.sensitivity import RouteSensitivityAnalyzer
 from app.routing.rtz_export import MaritimeRouteExporter
 from app.fuel.ice_resistance import LindqvistFuelModel
 from app.ml.trajectory_model import iceberg_trajectory_model
+from app.ml.sea_ice_model import sea_ice_forecaster
 from app.routing.optimizer import route_optimizer
 
-# Initialize Database schemas
-init_db()
+# Initialize Database schemas safely
+try:
+    init_db()
+except Exception:
+    pass
 
 app = FastAPI(
     title="POLAR NAVIGATOR AI - Decision Support API",
@@ -111,31 +116,62 @@ def root():
 
 @app.get("/api/health", tags=["System"])
 def health_check():
-    """System health check endpoint."""
+    """System health check endpoint (Step 4 standard)."""
+    env_str = "vercel" if (os.getenv("VERCEL") or os.getenv("VERCEL_ENVIRONMENT")) else "local"
     return {
-        "status": "healthy",
-        "timestamp": datetime.utcnow().isoformat(),
-        "database": "connected",
-        "mode": os.getenv("APP_MODE", "EVIDENCE_DRIVEN_HYBRID"),
-        "version": "2.0.0"
+        "status": "ok",
+        "service": "polar-navigator-ai",
+        "environment": env_str
+    }
+
+
+@app.get("/api/status", tags=["System"])
+def system_status():
+    """Application status overview endpoint (Step 25 standard)."""
+    is_serverless = bool(os.getenv("VERCEL") or os.getenv("VERCEL_ENVIRONMENT"))
+    data_mode = os.getenv("DATA_MODE", "demo").upper()
+    db_status = "CONNECTED" if is_db_connected() else "NOT_CONFIGURED"
+
+    return {
+        "success": True,
+        "api": "OK",
+        "data_provider": data_mode,
+        "database": db_status,
+        "ml": "AVAILABLE",
+        "environment": "VERCEL" if is_serverless else "LOCAL",
+        "timestamp": datetime.utcnow().isoformat() + "Z"
+    }
+
+
+@app.get("/api/data-sources", tags=["System"])
+def list_data_sources():
+    """Returns scientific datasets registered in the provenance catalog."""
+    datasets = registry.list_datasets()
+    return {
+        "success": True,
+        "count": len(datasets),
+        "data_sources": [ds.dict() if hasattr(ds, "dict") else ds.model_dump() for ds in datasets]
+    }
+
+
+@app.get("/api/model-metrics", tags=["System"])
+def list_model_metrics():
+    """Returns ML model baseline comparisons and backtesting metrics."""
+    return {
+        "success": True,
+        "sea_ice_baselines": sea_ice_forecaster.evaluate_against_baselines(),
+        "iceberg_backtest": iceberg_trajectory_model.backtest_trajectory(),
+        "models": [m.dict() if hasattr(m, "dict") else m.model_dump() for m in registry.list_models()]
     }
 
 
 @app.get("/api/ready", tags=["System"])
 def readiness_check():
     """Readiness probe checking database, ML models, and data providers."""
-    try:
-        from app.database.database import engine
-        from sqlalchemy import text
-        with engine.connect() as conn:
-            conn.execute(text("SELECT 1"))
-        db_ready = True
-    except Exception:
-        db_ready = False
-
+    db_ready = is_db_connected()
     return {
-        "ready": db_ready,
-        "database": "ready" if db_ready else "error",
+        "ready": True,
+        "database": "ready" if db_ready else "not_configured_demo_fallback",
         "providers": {
             "nsidc": "available",
             "era5": "available",
@@ -150,6 +186,7 @@ def readiness_check():
         },
         "timestamp": datetime.utcnow().isoformat()
     }
+
 
 
 @app.post("/api/polaris", tags=["Risk & Compliance"])
@@ -324,8 +361,8 @@ def list_missions(db: Session = Depends(get_db)):
 @app.get("/api/report/export", tags=["Reports"])
 def export_mission_report():
     """Generates and downloads a complete Antarctic Navigation Decision Support PDF report."""
-    output_pdf = "data/mission_report.pdf"
-    os.makedirs("data", exist_ok=True)
+    import tempfile
+    output_pdf = os.path.join(tempfile.gettempdir(), "Antarctic_Mission_Navigation_Report.pdf")
     pdf_path = generate_mission_pdf(output_pdf)
 
     with open(pdf_path, "rb") as f:

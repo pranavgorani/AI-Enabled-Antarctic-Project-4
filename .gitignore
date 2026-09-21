@@ -40,3 +40,6 @@ Thumbs.db
 # Cache directories
 .cache/
 data/cache/
+
+# Vercel
+.vercel/

@@ -10,12 +10,9 @@ from datetime import datetime, timedelta
 from typing import Optional
 import numpy as np
 import pandas as pd
-from app.providers.base import SeaIceProvider, DataResponse
+from app.providers.base import SeaIceProvider, DataResponse, get_cache_dir
 from app.data.demo_generator import demo_generator
 from app.core.logging import logger
-
-CACHE_DIR = os.path.join("data", "cache", "nsidc")
-os.makedirs(CACHE_DIR, exist_ok=True)
 
 
 class NSIDCSeaIceProvider(SeaIceProvider):
@@ -26,7 +23,7 @@ class NSIDCSeaIceProvider(SeaIceProvider):
 
     def __init__(self):
         self.api_token = os.getenv("NASA_EARTHDATA_TOKEN", "")
-        self.cache_file = os.path.join(CACHE_DIR, "latest_southern_sea_ice.json")
+        self.cache_file = os.path.join(get_cache_dir("nsidc"), "latest_southern_sea_ice.json")
 
     @property
     def provider_name(self) -> str:

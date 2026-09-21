@@ -7,12 +7,9 @@ import os
 import json
 from datetime import datetime
 from typing import Optional
-from app.providers.base import OceanProvider, DataResponse
+from app.providers.base import OceanProvider, DataResponse, get_cache_dir
 from app.data.demo_generator import demo_generator
 from app.core.logging import logger
-
-CACHE_DIR = os.path.join("data", "cache", "cmems")
-os.makedirs(CACHE_DIR, exist_ok=True)
 
 
 class CopernicusMarineProvider(OceanProvider):
@@ -23,7 +20,7 @@ class CopernicusMarineProvider(OceanProvider):
     def __init__(self):
         self.username = os.getenv("COPERNICUS_MARINE_USERNAME", "")
         self.password = os.getenv("COPERNICUS_MARINE_PASSWORD", "")
-        self.cache_file = os.path.join(CACHE_DIR, "latest_cmems_ocean.json")
+        self.cache_file = os.path.join(get_cache_dir("cmems"), "latest_cmems_ocean.json")
 
     @property
     def provider_name(self) -> str:

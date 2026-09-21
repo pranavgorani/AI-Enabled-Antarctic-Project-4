@@ -7,10 +7,29 @@ DataProvider
     └── DemoProvider
 """
 
+import os
+import tempfile
+from pathlib import Path
 from abc import ABC, abstractmethod
 from datetime import datetime
 from typing import Any, Optional
 from pydantic import BaseModel, Field
+
+
+def get_cache_dir(sub: str) -> str:
+    """Returns a resilient cache directory path that works in both serverless and local environments."""
+    is_serverless = bool(os.getenv("VERCEL") or os.getenv("VERCEL_ENVIRONMENT") or os.getenv("AWS_LAMBDA_FUNCTION_NAME"))
+    if is_serverless:
+        target = Path(tempfile.gettempdir()) / "polar_cache" / sub
+    else:
+        target = Path(__file__).resolve().parent.parent.parent / "data" / "cache" / sub
+    try:
+        target.mkdir(parents=True, exist_ok=True)
+    except Exception:
+        target = Path(tempfile.gettempdir()) / "polar_cache" / sub
+        target.mkdir(parents=True, exist_ok=True)
+    return str(target)
+
 
 
 class DataResponse(BaseModel):

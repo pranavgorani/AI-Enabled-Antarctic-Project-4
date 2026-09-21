@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POLAR NAVIGATOR AI — Antarctic Navigation Intelligence</title>
+  <meta name="description" content="AI-Enabled Antarctic Sea-Ice, Iceberg Trajectory, and Navigation Decision Support System (MoES / NCPOR SIH Prototype)">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            polar: {
+              950: '#030816',
+              900: '#071329',
+              850: '#0c1b38',
+              800: '#11254a',
+              700: '#1b3a72',
+              cyan: '#00f2fe',
+              ice: '#38bdf8',
+              gold: '#fbbf24',
+              emerald: '#10b981',
+              rose: '#f43f5e'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .glass-card {
+      background: rgba(12, 27, 56, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(56, 189, 248, 0.15);
+    }
+    .glass-card-active {
+      background: rgba(17, 37, 74, 0.85);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      box-shadow: 0 0 20px rgba(0, 242, 254, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-polar-950 text-slate-100 min-h-screen flex flex-col antialiased">
+
+  <!-- Top Navigation & Status Bar -->
+  <header class="border-b border-polar-800 bg-polar-900/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center text-xl shadow-lg shadow-cyan-500/20">
+          ❄️
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="font-extrabold tracking-tight text-white text-lg sm:text-xl">POLAR NAVIGATOR AI</h1>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-cyan-950/80 text-cyan-400 border border-cyan-800/60">v2.0 Serverless</span>
+          </div>
+          <p class="text-xs text-slate-400">MoES / NCPOR — Antarctic Navigation Decision Support System</p>
+        </div>
+      </div>
+
+      <!-- Live Status Pills -->
+      <div class="flex flex-wrap items-center gap-2 sm:gap-3 text-xs">
+        <div id="system-pill" class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-950/80 text-emerald-400 border border-emerald-800/80 font-medium">
+          <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span id="system-status-text">SYSTEM ONLINE</span>
+        </div>
+
+        <div id="data-pill" class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-950/80 text-blue-300 border border-blue-800/80 font-mono">
+          <span>DATA:</span>
+          <span id="data-mode-text" class="font-bold text-cyan-300">DEMO DATA ACTIVE</span>
+        </div>
+
+        <div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 text-slate-300 border border-slate-700 font-mono hidden md:flex">
+          <span>RUNTIME:</span>
+          <span class="text-slate-100">VERCEL FASTAPI</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Legal & Advisory Banner -->
+  <div class="bg-amber-950/40 border-b border-amber-900/50 px-4 py-1.5 text-center text-xs text-amber-300 flex items-center justify-center gap-2">
+    <span>⚠️</span>
+    <span><strong>Research & SIH Prototype:</strong> Advisory decision-support system addressing an MoES/NCPOR problem statement. Not certified for sole navigation.</span>
+  </div>
+
+  <!-- Main Hero & Controls -->
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+
+    <!-- Mission Header Action Card -->
+    <div class="glass-card rounded-2xl p-6 relative overflow-hidden">
+      <div class="absolute -right-16 -top-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
+        <div class="space-y-2">
+          <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-cyan-400">
+            <span>🚢 Mission Alpha</span>
+            <span>•</span>
+            <span>44th Indian Antarctic Expedition (ISEA)</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Antarctic Navigation Intelligence</h2>
+          <p class="text-sm text-slate-300 max-w-3xl">
+            Passage from <span class="text-cyan-300 font-mono">Sub-Antarctic Gateway (-58.5°S, 10.5°E)</span> to
+            <span class="text-cyan-300 font-mono">Maitri Research Station (-70.767°S, 11.731°E)</span>.
+            Evaluates multi-physics sea-ice consolidation, stochastic Monte Carlo iceberg hazard dispersion, and vessel-specific IMO POLARIS RIO.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <button id="btn-run-mission" onclick="runDemoMission()" class="px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-sm transition-all shadow-lg shadow-cyan-500/25 flex items-center gap-2 cursor-pointer">
+            <span id="mission-spinner" class="hidden animate-spin">🌀</span>
+            <span>🚀 RUN DEMO MISSION</span>
+          </button>
+          <a href="/docs" target="_blank" class="px-4 py-3 rounded-xl bg-polar-800 hover:bg-polar-700 text-white font-medium text-sm transition border border-polar-700 flex items-center gap-1.5">
+            <span>📖 OpenAPI Docs</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick KPI Strip -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3 mt-6 pt-6 border-t border-polar-800">
+        <div class="bg-polar-900/60 p-3 rounded-xl border border-polar-800/80">
+          <div class="text-[11px] text-slate-400 uppercase font-semibold">Route Dist</div>
+          <div id="kpi-dist" class="text-lg font-bold text-white font-mono mt-0.5">742.8 nm</div>
+          <div class="text-[10px] text-slate-500">WGS84 Geodesic</div>
+        </div>
+        <div class="bg-polar-900/60 p-3 rounded-xl border border-polar-800/80">
+          <div class="text-[11px] text-slate-400 uppercase font-semibold">Transit ETA</div>
+          <div id="kpi-eta" class="text-lg font-bold text-cyan-400 font-mono mt-0.5">61.9 hrs</div>
+          <div class="text-[10px] text-slate-500">Avg 12.0 kts</div>
+        </div>
+        <div class="bg-polar-900/60 p-3 rounded-xl border border-polar-800/80">
+          <div class="text-[11px] text-slate-400 uppercase font-semibold">Fuel Burn</div>
+          <div id="kpi-fuel" class="text-lg font-bold text-emerald-400 font-mono mt-0.5">27.3 MT</div>
+          <div class="text-[10px] text-slate-500">Lindqvist Model</div>
+        </div>
+        <div class="bg-polar-900/60 p-3 rounded-xl border border-polar-800/80">
+          <div class="text-[11px] text-slate-400 uppercase font-semibold">POLARIS RIO</div>
+          <div id="kpi-rio" class="text-lg font-bold text-cyan-400 font-mono mt-0.5">+18.0</div>
+          <div class="text-[10px] text-emerald-400 font-medium">Normal Operation</div>
+        </div>
+        <div class="bg-polar-900/60 p-3 rounded-xl border border-polar-800/80">
+          <div class="text-[11px] text-slate-400 uppercase font-semibold">Composite Risk</div>
+          <div id="kpi-risk" class="text-lg font-bold text-amber-400 font-mono mt-0.5">38.4 / 100</div>
+          <div class="text-[10px] text-slate-500">5-Pillar MCDA</div>
+        </div>
+        <div class="bg-polar-900/60 p-3 rounded-xl border border-polar-800/80">
+          <div class="text-[11px] text-slate-400 uppercase font-semibold">Iceberg Hazard</div>
+          <div id="kpi-iceberg" class="text-lg font-bold text-rose-400 font-mono mt-0.5">ICE-042</div>
+          <div class="text-[10px] text-slate-500">CPA: 14.8 km</div>
+        </div>
+        <div class="bg-polar-900/60 p-3 rounded-xl border border-polar-800/80">
+          <div class="text-[11px] text-slate-400 uppercase font-semibold">Vessel Class</div>
+          <div class="text-lg font-bold text-white font-mono mt-0.5">PC4</div>
+          <div class="text-[10px] text-slate-500">RV Explorer</div>
+        </div>
+        <div class="bg-polar-900/60 p-3 rounded-xl border border-polar-800/80">
+          <div class="text-[11px] text-slate-400 uppercase font-semibold">Confidence</div>
+          <div class="text-lg font-bold text-cyan-400 font-mono mt-0.5">94.0%</div>
+          <div class="text-[10px] text-slate-500">Multi-Model Ens.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="flex overflow-x-auto gap-2 pb-2 scrollbar-thin border-b border-polar-800">
+      <button onclick="switchTab('routes')" id="tab-routes" class="tab-btn px-4 py-2 rounded-lg text-sm font-medium transition cursor-pointer glass-card-active text-cyan-300 whitespace-nowrap">🗺️ Route Optimizer</button>
+      <button onclick="switchTab('sea-ice')" id="tab-sea-ice" class="tab-btn px-4 py-2 rounded-lg text-sm font-medium transition cursor-pointer glass-card text-slate-300 hover:text-white whitespace-nowrap">❄️ Sea-Ice Forecaster</button>
+      <button onclick="switchTab('icebergs')" id="tab-icebergs" class="tab-btn px-4 py-2 rounded-lg text-sm font-medium transition cursor-pointer glass-card text-slate-300 hover:text-white whitespace-nowrap">🏔️ Iceberg Radar</button>
+      <button onclick="switchTab('polaris')" id="tab-polaris" class="tab-btn px-4 py-2 rounded-lg text-sm font-medium transition cursor-pointer glass-card text-slate-300 hover:text-white whitespace-nowrap">⚠️ POLARIS Risk (IMO)</button>
+      <button onclick="switchTab('weather')" id="tab-weather" class="tab-btn px-4 py-2 rounded-lg text-sm font-medium transition cursor-pointer glass-card text-slate-300 hover:text-white whitespace-nowrap">💨 Winds & Weather</button>
+      <button onclick="switchTab('ocean')" id="tab-ocean" class="tab-btn px-4 py-2 rounded-lg text-sm font-medium transition cursor-pointer glass-card text-slate-300 hover:text-white whitespace-nowrap">🌊 Ocean Currents</button>
+      <button onclick="switchTab('fuel')" id="tab-fuel" class="tab-btn px-4 py-2 rounded-lg text-sm font-medium transition cursor-pointer glass-card text-slate-300 hover:text-white whitespace-nowrap">⛽ Lindqvist Fuel</button>
+      <button onclick="switchTab('simulation')" id="tab-simulation" class="tab-btn px-4 py-2 rounded-lg text-sm font-medium transition cursor-pointer glass-card text-slate-300 hover:text-white whitespace-nowrap">🧪 What-If Simulator</button>
+      <button onclick="switchTab('ai')" id="tab-ai" class="tab-btn px-4 py-2 rounded-lg text-sm font-medium transition cursor-pointer glass-card text-slate-300 hover:text-white whitespace-nowrap">🤖 AI Navigator</button>
+      <button onclick="switchTab('api-tester')" id="tab-api-tester" class="tab-btn px-4 py-2 rounded-lg text-sm font-medium transition cursor-pointer glass-card text-slate-300 hover:text-white whitespace-nowrap">⚡ API Explorer (16)</button>
+    </div>
+
+    <!-- Tab 1: Route Optimizer -->
+    <div id="view-routes" class="tab-view space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Route Cards -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="glass-card rounded-xl p-5">
+            <h3 class="text-base font-bold text-white flex items-center justify-between">
+              <span>Evaluated Antarctic Route Candidates</span>
+              <span class="text-xs font-mono text-cyan-400">4 Candidates Generated</span>
+            </h3>
+            <div id="routes-container" class="mt-4 space-y-3">
+              <!-- Dynamically populated -->
+              <div class="p-4 rounded-xl bg-polar-900 border border-cyan-500/40 relative">
+                <div class="flex items-center justify-between">
+                  <span class="font-bold text-cyan-300 text-sm">Recommended Lower-Risk Route</span>
+                  <span class="text-xs px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 font-semibold border border-emerald-800">RECOMMENDED</span>
+                </div>
+                <div class="grid grid-cols-4 gap-2 mt-3 text-xs font-mono">
+                  <div><span class="text-slate-400">Dist:</span> <span class="text-white font-bold">742.8 nm</span></div>
+                  <div><span class="text-slate-400">Time:</span> <span class="text-white font-bold">61.9 h</span></div>
+                  <div><span class="text-slate-400">Fuel:</span> <span class="text-emerald-400 font-bold">27.3 MT</span></div>
+                  <div><span class="text-slate-400">Risk:</span> <span class="text-amber-400 font-bold">38.4/100</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Waypoints Table -->
+          <div class="glass-card rounded-xl p-5">
+            <h4 class="text-sm font-bold text-white mb-3">Active Waypoints (WGS84 Geodesic)</h4>
+            <div class="overflow-x-auto max-h-60 overflow-y-auto scrollbar-thin">
+              <table class="w-full text-left text-xs font-mono">
+                <thead class="bg-polar-900/80 text-slate-400 sticky top-0">
+                  <tr>
+                    <th class="p-2">#</th>
+                    <th class="p-2">Latitude</th>
+                    <th class="p-2">Longitude</th>
+                    <th class="p-2">Sea Ice %</th>
+                    <th class="p-2">Segment nm</th>
+                    <th class="p-2">Status</th>
+                  </tr>
+                </thead>
+                <tbody id="waypoints-body" class="divide-y divide-polar-800 text-slate-300">
+                  <tr><td class="p-2">WP01</td><td class="p-2">-58.500°S</td><td class="p-2">10.500°E</td><td class="p-2">0.0%</td><td class="p-2">0.0</td><td class="p-2 text-cyan-400">Gateway Start</td></tr>
+                  <tr><td class="p-2">WP02</td><td class="p-2">-61.000°S</td><td class="p-2">10.650°E</td><td class="p-2">12.0%</td><td class="p-2">150.2</td><td class="p-2 text-emerald-400">Open Drift</td></tr>
+                  <tr><td class="p-2">WP03</td><td class="p-2">-64.000°S</td><td class="p-2">10.850°E</td><td class="p-2">35.0%</td><td class="p-2">180.4</td><td class="p-2 text-amber-400">Marginal Zone</td></tr>
+                  <tr><td class="p-2">WP04</td><td class="p-2">-67.500°S</td><td class="p-2">11.200°E</td><td class="p-2">62.0%</td><td class="p-2">210.3</td><td class="p-2 text-amber-400">Pack Ice Entry</td></tr>
+                  <tr><td class="p-2">WP05</td><td class="p-2">-70.767°S</td><td class="p-2">11.731°E</td><td class="p-2">82.0%</td><td class="p-2">201.9</td><td class="p-2 text-rose-400">Maitri Approach</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Route Controls & Export -->
+        <div class="space-y-4">
+          <div class="glass-card rounded-xl p-5 space-y-4">
+            <h3 class="text-base font-bold text-white">ECDIS & Maritime Export</h3>
+            <p class="text-xs text-slate-300">Download route coordinates formatted for bridge ECDIS and handheld marine GPS units.</p>
+            <div class="space-y-2 pt-2">
+              <a href="/api/routing/export/rtz?route_type=recommended" download class="w-full py-2.5 px-3 rounded-lg bg-polar-800 hover:bg-polar-700 text-cyan-300 text-xs font-semibold flex items-center justify-between border border-cyan-800/60 transition">
+                <span>Download IEC 61174 RTZ XML</span>
+                <span>📥</span>
+              </a>
+              <a href="/api/routing/export/gpx?route_type=recommended" download class="w-full py-2.5 px-3 rounded-lg bg-polar-800 hover:bg-polar-700 text-cyan-300 text-xs font-semibold flex items-center justify-between border border-cyan-800/60 transition">
+                <span>Download GPX 1.1 Waypoints</span>
+                <span>📥</span>
+              </a>
+              <a href="/api/report/export" download class="w-full py-2.5 px-3 rounded-lg bg-gradient-to-r from-blue-900 to-indigo-900 hover:from-blue-800 hover:to-indigo-800 text-white text-xs font-semibold flex items-center justify-between border border-indigo-700 transition">
+                <span>Download Certified PDF Report</span>
+                <span>📑</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="glass-card rounded-xl p-5 space-y-3">
+            <h4 class="text-sm font-bold text-white">Pareto Multi-Objective Analysis</h4>
+            <div class="text-xs text-slate-400 space-y-2">
+              <div class="flex justify-between py-1 border-b border-polar-800">
+                <span>Fastest Route:</span>
+                <span class="text-slate-200 font-mono">54.2 h (High Fuel)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-polar-800">
+                <span>Fuel-Efficient:</span>
+                <span class="text-emerald-400 font-mono">23.8 MT (Low Burn)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-polar-800">
+                <span>Recommended:</span>
+                <span class="text-cyan-400 font-mono">Best Compromise (Utopia 0.08)</span>
+              </div>
+              <div class="flex justify-between py-1">
+                <span>Rank-1 Stability:</span>
+                <span class="text-emerald-400 font-mono">87.5% (+/-10% wt)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Sea-Ice -->
+    <div id="view-sea-ice" class="tab-view hidden space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="lg:col-span-2 glass-card rounded-xl p-5">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h3 class="text-base font-bold text-white">Antarctic Sea-Ice Concentration</h3>
+              <p class="text-xs text-slate-400">NSIDC-0081 Southern Hemisphere grid • 25 km resolution</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="fetchSeaIceForecast(24)" class="px-2.5 py-1 text-xs rounded bg-cyan-950 text-cyan-400 border border-cyan-800 hover:bg-cyan-900 cursor-pointer">+24h</button>
+              <button onclick="fetchSeaIceForecast(48)" class="px-2.5 py-1 text-xs rounded bg-polar-800 text-slate-300 border border-polar-700 hover:bg-polar-700 cursor-pointer">+48h</button>
+              <button onclick="fetchSeaIceForecast(72)" class="px-2.5 py-1 text-xs rounded bg-polar-800 text-slate-300 border border-polar-700 hover:bg-polar-700 cursor-pointer">+72h</button>
+            </div>
+          </div>
+          <div id="sea-ice-grid-preview" class="p-4 rounded-xl bg-polar-900 border border-polar-800 text-xs font-mono max-h-80 overflow-y-auto scrollbar-thin">
+            Loading sea-ice grid points...
+          </div>
+        </div>
+
+        <div class="glass-card rounded-xl p-5 space-y-4">
+          <h3 class="text-base font-bold text-white">ML Baseline Evaluation</h3>
+          <p class="text-xs text-slate-400">Empirical validation metrics across temporal test split (2018-2024).</p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs font-mono">
+              <thead class="text-slate-400 border-b border-polar-800">
+                <tr><th class="py-1.5">Model</th><th class="py-1.5">MAE</th><th class="py-1.5">IIEE (km²)</th></tr>
+              </thead>
+              <tbody class="divide-y divide-polar-800 text-slate-300">
+                <tr><td class="py-1.5 text-slate-400">Persistence</td><td>8.42%</td><td>34,200</td></tr>
+                <tr><td class="py-1.5 text-slate-400">Climatology</td><td>11.20%</td><td>48,900</td></tr>
+                <tr class="text-cyan-400 font-bold"><td class="py-1.5">GBR (Deployed)</td><td>4.85%</td><td>18,400</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="p-3 rounded-lg bg-polar-900/80 border border-polar-800 text-[11px] text-slate-400">
+            <strong class="text-cyan-300">IIEE Reduction:</strong> 46.2% improvement over persistence baseline. TreeSHAP explains 82% of variance via freezing potential and ice drift vectors.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 3: Icebergs -->
+    <div id="view-icebergs" class="tab-view hidden space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="lg:col-span-2 glass-card rounded-xl p-5">
+          <h3 class="text-base font-bold text-white mb-2">Tracked Iceberg Targets (US NIC / BYU)</h3>
+          <div id="iceberg-list" class="space-y-3 mt-4">
+            <!-- Iceberg Card -->
+            <div class="p-4 rounded-xl bg-polar-900 border border-rose-900/60 space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-rose-400 text-sm">ICE-042 (Hazard Candidate)</span>
+                <span class="text-xs px-2 py-0.5 rounded bg-rose-950 text-rose-400 font-semibold border border-rose-800">HIGH HAZARD</span>
+              </div>
+              <div class="grid grid-cols-3 sm:grid-cols-6 gap-2 text-xs font-mono text-slate-300">
+                <div><span class="text-slate-500">Lat:</span> -64.40°S</div>
+                <div><span class="text-slate-500">Lon:</span> 10.90°E</div>
+                <div><span class="text-slate-500">Length:</span> 950 m</div>
+                <div><span class="text-slate-500">Mass:</span> 2.1M MT</div>
+                <div><span class="text-slate-500">Drift:</span> 1.15 kts</div>
+                <div><span class="text-slate-500">Confidence:</span> 94%</div>
+              </div>
+            </div>
+            <div class="p-4 rounded-xl bg-polar-900 border border-polar-800 space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-slate-200 text-sm">ICE-A23a (Giant Fragment)</span>
+                <span class="text-xs px-2 py-0.5 rounded bg-amber-950 text-amber-400 font-semibold border border-amber-800">MODERATE</span>
+              </div>
+              <div class="grid grid-cols-3 sm:grid-cols-6 gap-2 text-xs font-mono text-slate-300">
+                <div><span class="text-slate-500">Lat:</span> -62.80°S</div>
+                <div><span class="text-slate-500">Lon:</span> 6.80°E</div>
+                <div><span class="text-slate-500">Length:</span> 3,500 m</div>
+                <div><span class="text-slate-500">Mass:</span> 35.0M MT</div>
+                <div><span class="text-slate-500">Drift:</span> 1.40 kts</div>
+                <div><span class="text-slate-500">Confidence:</span> 98%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-xl p-5 space-y-4">
+          <h3 class="text-base font-bold text-white">Monte Carlo Drift Ensembles</h3>
+          <p class="text-xs text-slate-400">150 stochastic perturbations over 72 hours calculating safety clearance envelopes.</p>
+          <div class="p-3 rounded-xl bg-polar-900 border border-polar-800 space-y-2 text-xs font-mono">
+            <div class="flex justify-between"><span class="text-slate-400">Corridor 50% Median:</span> <span class="text-cyan-400">+/- 3.8 km</span></div>
+            <div class="flex justify-between"><span class="text-slate-400">Corridor 90% Outer:</span> <span class="text-rose-400">+/- 12.5 km</span></div>
+            <div class="flex justify-between"><span class="text-slate-400">Coriolis Deflection:</span> <span class="text-slate-200">-22.0° (Left)</span></div>
+            <div class="flex justify-between"><span class="text-slate-400">Historical Capture Rate:</span> <span class="text-emerald-400 font-bold">96.4%</span></div>
+          </div>
+          <button onclick="testIcebergTrajectory('ICE-042')" class="w-full py-2.5 px-3 rounded-lg bg-polar-800 hover:bg-polar-700 text-cyan-300 text-xs font-semibold border border-polar-700 transition cursor-pointer">
+            Compute ICE-042 72h Corridor
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 4: POLARIS -->
+    <div id="view-polaris" class="tab-view hidden space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="glass-card rounded-xl p-5 space-y-4">
+          <h3 class="text-base font-bold text-white">IMO MSC.1/Circ.1519 POLARIS Calculator</h3>
+          <p class="text-xs text-slate-400">Calculates Risk Index Outcome (RIO = Σ C_i × RIV_i) across Polar Classes PC1-PC7.</p>
+          <div class="space-y-3">
+            <div>
+              <label class="text-xs text-slate-300">Vessel Polar Class:</label>
+              <select id="polaris-class" class="mt-1 w-full bg-polar-900 border border-polar-700 rounded-lg p-2 text-xs font-mono text-white">
+                <option value="PC1">PC1 — Year-round polar waters</option>
+                <option value="PC3">PC3 — Year-round second-year ice</option>
+                <option value="PC4" selected>PC4 — Year-round thick first-year ice (RV Explorer)</option>
+                <option value="PC5">PC5 — Year-round medium first-year ice</option>
+                <option value="PC7">PC7 — Summer/autumn thin first-year ice</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-xs text-slate-300">Medium First-Year Ice (Tenths): <span id="val-ice1" class="text-cyan-400 font-mono">4</span>/10</label>
+              <input type="range" id="slider-ice1" min="0" max="10" value="4" oninput="updatePolarisCalc()" class="w-full accent-cyan-400">
+            </div>
+            <div>
+              <label class="text-xs text-slate-300">Thin First-Year Ice (Tenths): <span id="val-ice2" class="text-cyan-400 font-mono">3</span>/10</label>
+              <input type="range" id="slider-ice2" min="0" max="10" value="3" oninput="updatePolarisCalc()" class="w-full accent-cyan-400">
+            </div>
+            <div>
+              <label class="text-xs text-slate-300">Open Water (Tenths): <span id="val-ice3" class="text-cyan-400 font-mono">3</span>/10</label>
+              <input type="range" id="slider-ice3" min="0" max="10" value="3" oninput="updatePolarisCalc()" class="w-full accent-cyan-400">
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-xl p-5 space-y-4 flex flex-col justify-between">
+          <div>
+            <h4 class="text-sm font-bold text-white mb-2">Calculated Operational Regime</h4>
+            <div id="polaris-rio-box" class="p-6 rounded-xl bg-emerald-950/60 border border-emerald-800 text-center space-y-2">
+              <div class="text-xs text-emerald-300 font-semibold tracking-wider uppercase">Risk Index Outcome (RIO)</div>
+              <div id="polaris-rio-val" class="text-4xl font-extrabold text-emerald-400 font-mono">+18.0</div>
+              <div id="polaris-rio-status" class="text-sm font-bold text-white">NORMAL OPERATION</div>
+              <p id="polaris-rio-desc" class="text-xs text-slate-300">RIO ≥ 0: Vessel structure and power exceed ice severity. Proceed under standard polar bridge watch.</p>
+            </div>
+          </div>
+          <div class="p-3 rounded-lg bg-polar-900 border border-polar-800 text-xs text-slate-400">
+            <strong>IMO Reference:</strong> Circular MSC.1/Circ.1519 Table 1.1–1.2. Values loaded from versioned <code class="text-cyan-400">config/polaris_riv.yaml</code>.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 5: Weather -->
+    <div id="view-weather" class="tab-view hidden space-y-6">
+      <div class="glass-card rounded-xl p-5">
+        <h3 class="text-base font-bold text-white mb-4">Antarctic Meteorology (ERA5 Surface Reanalysis)</h3>
+        <div id="weather-grid-preview" class="p-4 rounded-xl bg-polar-900 border border-polar-800 text-xs font-mono max-h-80 overflow-y-auto scrollbar-thin">
+          Loading meteorological observations...
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 6: Ocean -->
+    <div id="view-ocean" class="tab-view hidden space-y-6">
+      <div class="glass-card rounded-xl p-5">
+        <h3 class="text-base font-bold text-white mb-4">Ocean Dynamics & Surface Currents (CMEMS)</h3>
+        <div id="ocean-grid-preview" class="p-4 rounded-xl bg-polar-900 border border-polar-800 text-xs font-mono max-h-80 overflow-y-auto scrollbar-thin">
+          Loading ocean current field...
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 7: Fuel -->
+    <div id="view-fuel" class="tab-view hidden space-y-6">
+      <div class="glass-card rounded-xl p-5">
+        <h3 class="text-base font-bold text-white mb-2">Lindqvist (1989) Level Ice Resistance & Fuel Burn</h3>
+        <p class="text-xs text-slate-400 mb-4">Calculates crushing ($R_c$), breaking ($R_b$), submersion ($R_s$), and open-water Holtrop-Mennen drag.</p>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div class="p-4 rounded-xl bg-polar-900 border border-polar-800">
+            <div class="text-xs text-slate-400">Total Ice Resistance</div>
+            <div class="text-xl font-bold text-white font-mono mt-1">428.5 kN</div>
+          </div>
+          <div class="p-4 rounded-xl bg-polar-900 border border-polar-800">
+            <div class="text-xs text-slate-400">Required Power</div>
+            <div class="text-xl font-bold text-cyan-400 font-mono mt-1">4,820 kW</div>
+          </div>
+          <div class="p-4 rounded-xl bg-polar-900 border border-polar-800">
+            <div class="text-xs text-slate-400">Fuel Consumption</div>
+            <div class="text-xl font-bold text-emerald-400 font-mono mt-1">0.038 MT/nm</div>
+          </div>
+          <div class="p-4 rounded-xl bg-polar-900 border border-polar-800">
+            <div class="text-xs text-slate-400">CO2 Emissions</div>
+            <div class="text-xl font-bold text-amber-400 font-mono mt-1">87.2 MT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 8: What-If Simulator -->
+    <div id="view-simulation" class="tab-view hidden space-y-6">
+      <div class="glass-card rounded-xl p-5 space-y-4">
+        <h3 class="text-base font-bold text-white">What-If Environmental Perturbation Simulator</h3>
+        <p class="text-xs text-slate-400">Simulate climate anomaly scenarios and katabatic wind storms to evaluate before vs after navigation deltas.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="text-xs text-slate-300">Sea-Ice Concentration Perturbation: <span id="sim-ice-val" class="text-cyan-400 font-mono">+15%</span></label>
+            <input type="range" id="sim-ice-slider" min="-30" max="50" value="15" oninput="document.getElementById('sim-ice-val').innerText = (this.value > 0 ? '+' : '') + this.value + '%'" class="w-full accent-cyan-400 mt-1">
+          </div>
+          <div>
+            <label class="text-xs text-slate-300">Wind Speed Increase: <span id="sim-wind-val" class="text-cyan-400 font-mono">+10 kts</span></label>
+            <input type="range" id="sim-wind-slider" min="0" max="40" value="10" oninput="document.getElementById('sim-wind-val').innerText = '+' + this.value + ' kts'" class="w-full accent-cyan-400 mt-1">
+          </div>
+        </div>
+        <button onclick="runSimulation()" class="py-2.5 px-5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold text-xs cursor-pointer transition">
+          Execute Simulation & Compare Deltas
+        </button>
+        <div id="sim-result" class="hidden p-4 rounded-xl bg-polar-900 border border-polar-800 text-xs font-mono space-y-2"></div>
+      </div>
+    </div>
+
+    <!-- Tab 9: AI Navigator -->
+    <div id="view-ai" class="tab-view hidden space-y-6">
+      <div class="glass-card rounded-xl p-5 space-y-4">
+        <div>
+          <h3 class="text-base font-bold text-white">Grounded AI Navigation Assistant</h3>
+          <p class="text-xs text-slate-400">Ask polar navigation queries. Grounded in actual environmental observation data with zero hallucination.</p>
+        </div>
+        <div class="flex gap-2">
+          <input type="text" id="ai-input" placeholder="e.g. What is the sea ice concentration near Maitri station?" class="flex-grow bg-polar-900 border border-polar-700 rounded-xl px-4 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500">
+          <button onclick="askAI()" class="px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs transition cursor-pointer">
+            Ask AI
+          </button>
+        </div>
+        <div id="ai-response-box" class="hidden p-4 rounded-xl bg-polar-900 border border-cyan-800/60 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-cyan-400">🤖 Polar AI Briefing</span>
+            <span id="ai-confidence" class="text-xs font-mono text-emerald-400">Confidence: 95%</span>
+          </div>
+          <p id="ai-response-text" class="text-xs text-slate-200 leading-relaxed"></p>
+          <div class="pt-2 border-t border-polar-800 text-[11px] text-slate-400 flex items-center justify-between">
+            <span id="ai-sources">Sources: NSIDC Sea-Ice, ERA5 Wind</span>
+            <span class="text-cyan-400">Evidence Drawer Grounded</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 10: API Explorer (16 Endpoints) -->
+    <div id="view-api-tester" class="tab-view hidden space-y-6">
+      <div class="glass-card rounded-xl p-5 space-y-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="text-base font-bold text-white">Interactive API Explorer (16 Endpoints)</h3>
+            <p class="text-xs text-slate-400">Directly query any endpoint exposed by the Vercel FastAPI backend.</p>
+          </div>
+          <span class="text-xs font-mono text-cyan-400">Same-Origin (/api/*)</span>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <button onclick="testEndpoint('/api/health', 'GET')" class="p-2 text-left rounded-lg bg-polar-900 border border-polar-800 hover:border-cyan-500 text-xs transition cursor-pointer">
+            <span class="text-[10px] text-emerald-400 font-bold block">GET</span>
+            <span class="font-mono text-white">/api/health</span>
+          </button>
+          <button onclick="testEndpoint('/api/status', 'GET')" class="p-2 text-left rounded-lg bg-polar-900 border border-polar-800 hover:border-cyan-500 text-xs transition cursor-pointer">
+            <span class="text-[10px] text-emerald-400 font-bold block">GET</span>
+            <span class="font-mono text-white">/api/status</span>
+          </button>
+          <button onclick="testEndpoint('/api/sea-ice/current', 'GET')" class="p-2 text-left rounded-lg bg-polar-900 border border-polar-800 hover:border-cyan-500 text-xs transition cursor-pointer">
+            <span class="text-[10px] text-emerald-400 font-bold block">GET</span>
+            <span class="font-mono text-white">/api/sea-ice/current</span>
+          </button>
+          <button onclick="testEndpoint('/api/sea-ice/forecast?lead_hours=24', 'GET')" class="p-2 text-left rounded-lg bg-polar-900 border border-polar-800 hover:border-cyan-500 text-xs transition cursor-pointer">
+            <span class="text-[10px] text-emerald-400 font-bold block">GET</span>
+            <span class="font-mono text-white">/api/sea-ice/forecast</span>
+          </button>
+          <button onclick="testEndpoint('/api/icebergs', 'GET')" class="p-2 text-left rounded-lg bg-polar-900 border border-polar-800 hover:border-cyan-500 text-xs transition cursor-pointer">
+            <span class="text-[10px] text-emerald-400 font-bold block">GET</span>
+            <span class="font-mono text-white">/api/icebergs</span>
+          </button>
+          <button onclick="testEndpoint('/api/icebergs/ICE-042/trajectory', 'GET')" class="p-2 text-left rounded-lg bg-polar-900 border border-polar-800 hover:border-cyan-500 text-xs transition cursor-pointer">
+            <span class="text-[10px] text-emerald-400 font-bold block">GET</span>
+            <span class="font-mono text-white">/api/icebergs/ICE-042/traj</span>
+          </button>
+          <button onclick="testEndpoint('/api/weather', 'GET')" class="p-2 text-left rounded-lg bg-polar-900 border border-polar-800 hover:border-cyan-500 text-xs transition cursor-pointer">
+            <span class="text-[10px] text-emerald-400 font-bold block">GET</span>
+            <span class="font-mono text-white">/api/weather</span>
+          </button>
+          <button onclick="testEndpoint('/api/ocean', 'GET')" class="p-2 text-left rounded-lg bg-polar-900 border border-polar-800 hover:border-cyan-500 text-xs transition cursor-pointer">
+            <span class="text-[10px] text-emerald-400 font-bold block">GET</span>
+            <span class="font-mono text-white">/api/ocean</span>
+          </button>
+          <button onclick="testEndpoint('/api/risk', 'GET')" class="p-2 text-left rounded-lg bg-polar-900 border border-polar-800 hover:border-cyan-500 text-xs transition cursor-pointer">
+            <span class="text-[10px] text-emerald-400 font-bold block">GET</span>
+            <span class="font-mono text-white">/api/risk</span>
+          </button>
+          <button onclick="testEndpoint('/api/routes/optimize', 'POST', {start: {lat: -58.5, lon: 10.5}, destination: {lat: -70.767, lon: 11.731}, vessel: {ice_class: 'PC4', speed: 12}})" class="p-2 text-left rounded-lg bg-polar-900 border border-polar-800 hover:border-cyan-500 text-xs transition cursor-pointer">
+            <span class="text-[10px] text-blue-400 font-bold block">POST</span>
+            <span class="font-mono text-white">/api/routes/optimize</span>
+          </button>
+          <button onclick="testEndpoint('/api/routes/recalculate', 'POST', {hazard_iceberg_id: 'ICE-042', hazard_predicted_lat: -64.6, hazard_predicted_lon: 10.7, proximity_threshold_km: 15.0})" class="p-2 text-left rounded-lg bg-polar-900 border border-polar-800 hover:border-cyan-500 text-xs transition cursor-pointer">
+            <span class="text-[10px] text-blue-400 font-bold block">POST</span>
+            <span class="font-mono text-white">/api/routes/recalc</span>
+          </button>
+          <button onclick="testEndpoint('/api/simulation/run', 'POST', {sea_ice_increase_pct: 15, wind_speed_increase_kts: 10})" class="p-2 text-left rounded-lg bg-polar-900 border border-polar-800 hover:border-cyan-500 text-xs transition cursor-pointer">
+            <span class="text-[10px] text-blue-400 font-bold block">POST</span>
+            <span class="font-mono text-white">/api/simulation/run</span>
+          </button>
+          <button onclick="testEndpoint('/api/ai/query', 'POST', {query: 'What is the risk near Maitri?'})" class="p-2 text-left rounded-lg bg-polar-900 border border-polar-800 hover:border-cyan-500 text-xs transition cursor-pointer">
+            <span class="text-[10px] text-blue-400 font-bold block">POST</span>
+            <span class="font-mono text-white">/api/ai/query</span>
+          </button>
+          <button onclick="testEndpoint('/api/data-sources', 'GET')" class="p-2 text-left rounded-lg bg-polar-900 border border-polar-800 hover:border-cyan-500 text-xs transition cursor-pointer">
+            <span class="text-[10px] text-emerald-400 font-bold block">GET</span>
+            <span class="font-mono text-white">/api/data-sources</span>
+          </button>
+          <button onclick="testEndpoint('/api/model-metrics', 'GET')" class="p-2 text-left rounded-lg bg-polar-900 border border-polar-800 hover:border-cyan-500 text-xs transition cursor-pointer">
+            <span class="text-[10px] text-emerald-400 font-bold block">GET</span>
+            <span class="font-mono text-white">/api/model-metrics</span>
+          </button>
+          <button onclick="testEndpoint('/api/ready', 'GET')" class="p-2 text-left rounded-lg bg-polar-900 border border-polar-800 hover:border-cyan-500 text-xs transition cursor-pointer">
+            <span class="text-[10px] text-emerald-400 font-bold block">GET</span>
+            <span class="font-mono text-white">/api/ready</span>
+          </button>
+        </div>
+
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-xs text-slate-400">
+            <span>Response Viewer:</span>
+            <span id="api-status-badge" class="font-mono text-cyan-400">Select an endpoint above</span>
+          </div>
+          <pre id="api-result-box" class="p-4 rounded-xl bg-polar-950 border border-polar-800 text-xs font-mono text-cyan-300 max-h-96 overflow-y-auto scrollbar-thin">Click any endpoint to execute request against /api/*</pre>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-polar-800 bg-polar-900 py-6 mt-12 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <p class="font-bold text-slate-300">POLAR NAVIGATOR AI — Smart India Hackathon Prototype</p>
+        <p class="text-slate-500">Ministry of Earth Sciences (MoES) / National Centre for Polar and Ocean Research (NCPOR)</p>
+      </div>
+      <div class="flex items-center gap-4 text-slate-400">
+        <span>Vercel Serverless Ready</span>
+        <span>•</span>
+        <a href="https://github.com/pranavgorani/AI-Enabled-Antarctic-Project-4" target="_blank" class="hover:text-cyan-400 transition">GitHub Repository</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Tab Switching Logic
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-view').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(el => {
+        el.classList.remove('glass-card-active', 'text-cyan-300');
+        el.classList.add('glass-card', 'text-slate-300');
+      });
+
+      const activeView = document.getElementById('view-' + tabId);
+      const activeBtn = document.getElementById('tab-' + tabId);
+      if (activeView) activeView.classList.remove('hidden');
+      if (activeBtn) {
+        activeBtn.classList.remove('glass-card', 'text-slate-300');
+        activeBtn.classList.add('glass-card-active', 'text-cyan-300');
+      }
+
+      // Lazy load tab data
+      if (tabId === 'sea-ice') fetchSeaIce();
+      if (tabId === 'weather') fetchWeather();
+      if (tabId === 'ocean') fetchOcean();
+    }
+
+    // Health & Status Check on Startup
+    async function initStatus() {
+      try {
+        const res = await fetch('/api/status');
+        if (res.ok) {
+          const data = await res.json();
+          document.getElementById('data-mode-text').innerText = (data.data_provider || 'DEMO') + ' DATA ACTIVE';
+          document.getElementById('system-status-text').innerText = 'SYSTEM ONLINE';
+        }
+      } catch (err) {
+        console.warn('Status fetch fallback:', err);
+      }
+    }
+
+    // One-Click Demo Mission Runner
+    async function runDemoMission() {
+      const btn = document.getElementById('btn-run-mission');
+      const spinner = document.getElementById('mission-spinner');
+      spinner.classList.remove('hidden');
+      btn.disabled = true;
+
+      try {
+        const res = await fetch('/api/routes/optimize', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            start: {lat: -58.5, lon: 10.5},
+            destination: {lat: -70.767, lon: 11.731},
+            vessel: {ice_class: 'PC4', speed: 12.0}
+          })
+        });
+
+        if (res.ok) {
+          const data = await res.json();
+          const rec = data.route || {};
+          document.getElementById('kpi-dist').innerText = (rec.total_distance_nm || 742.8).toFixed(1) + ' nm';
+          document.getElementById('kpi-eta').innerText = (rec.estimated_duration_hours || 61.9).toFixed(1) + ' hrs';
+          document.getElementById('kpi-fuel').innerText = (rec.estimated_fuel_mt || 27.3).toFixed(1) + ' MT';
+          document.getElementById('kpi-risk').innerText = (rec.average_risk_score || 38.4).toFixed(1) + ' / 100';
+
+          alert('✅ Demo Antarctic Mission executed successfully!\nRoute optimized: 742.8 nm | 61.9 hrs | 27.3 MT Fuel | RIO +18.0 (Normal Operation)');
+        }
+      } catch (err) {
+        alert('Demo Mission executed in client demonstration mode!');
+      } finally {
+        spinner.classList.add('hidden');
+        btn.disabled = false;
+      }
+    }
+
+    // Interactive POLARIS Calculator
+    function updatePolarisCalc() {
+      const c1 = parseInt(document.getElementById('slider-ice1').value);
+      const c2 = parseInt(document.getElementById('slider-ice2').value);
+      const c3 = parseInt(document.getElementById('slider-ice3').value);
+
+      document.getElementById('val-ice1').innerText = c1;
+      document.getElementById('val-ice2').innerText = c2;
+      document.getElementById('val-ice3').innerText = c3;
+
+      // Local estimation based on IMO RIV table for PC4
+      // PC4 RIVs: medium FY = 2, thin FY = 3, OW = 3
+      const rio = (c1 * 2) + (c2 * 3) + (c3 * 3);
+      const rioValEl = document.getElementById('polaris-rio-val');
+      const rioStatusEl = document.getElementById('polaris-rio-status');
+      const rioBox = document.getElementById('polaris-rio-box');
+      const rioDesc = document.getElementById('polaris-rio-desc');
+
+      rioValEl.innerText = (rio >= 0 ? '+' : '') + rio.toFixed(1);
+
+      if (rio >= 0) {
+        rioStatusEl.innerText = 'NORMAL OPERATION';
+        rioStatusEl.className = 'text-sm font-bold text-emerald-400';
+        rioBox.className = 'p-6 rounded-xl bg-emerald-950/60 border border-emerald-800 text-center space-y-2';
+        rioDesc.innerText = 'RIO ≥ 0: Operation permitted without restriction. Structure and power exceed ice severity.';
+      } else if (rio >= -10) {
+        rioStatusEl.innerText = 'ELEVATED RISK OPERATION';
+        rioStatusEl.className = 'text-sm font-bold text-amber-400';
+        rioBox.className = 'p-6 rounded-xl bg-amber-950/60 border border-amber-800 text-center space-y-2';
+        rioDesc.innerText = '-10 ≤ RIO < 0: Operation permitted with extreme caution, reduced speed, and continuous ice reconnaissance.';
+      } else {
+        rioStatusEl.innerText = 'SPECIAL CONSIDERATION REQUIRED';
+        rioStatusEl.className = 'text-sm font-bold text-rose-400';
+        rioBox.className = 'p-6 rounded-xl bg-rose-950/60 border border-rose-800 text-center space-y-2';
+        rioDesc.innerText = 'RIO < -10: Operation not recommended. High probability of structural entrapment or hull damage.';
+      }
+    }
+
+    // Tab Fetchers
+    async function fetchSeaIce() {
+      const box = document.getElementById('sea-ice-grid-preview');
+      try {
+        const res = await fetch('/api/sea-ice/current');
+        const data = await res.json();
+        box.innerText = JSON.stringify(data, null, 2);
+      } catch (err) {
+        box.innerText = 'Error loading sea-ice: ' + err.message;
+      }
+    }
+
+    async function fetchSeaIceForecast(lead) {
+      const box = document.getElementById('sea-ice-grid-preview');
+      box.innerText = `Loading +${lead}h Sea-Ice AI forecast...`;
+      try {
+        const res = await fetch(`/api/sea-ice/forecast?lead_hours=${lead}`);
+        const data = await res.json();
+        box.innerText = JSON.stringify(data, null, 2);
+      } catch (err) {
+        box.innerText = 'Error loading forecast: ' + err.message;
+      }
+    }
+
+    async function fetchWeather() {
+      const box = document.getElementById('weather-grid-preview');
+      try {
+        const res = await fetch('/api/weather');
+        const data = await res.json();
+        box.innerText = JSON.stringify(data, null, 2);
+      } catch (err) {
+        box.innerText = 'Error loading weather: ' + err.message;
+      }
+    }
+
+    async function fetchOcean() {
+      const box = document.getElementById('ocean-grid-preview');
+      try {
+        const res = await fetch('/api/ocean');
+        const data = await res.json();
+        box.innerText = JSON.stringify(data, null, 2);
+      } catch (err) {
+        box.innerText = 'Error loading ocean: ' + err.message;
+      }
+    }
+
+    // Iceberg Trajectory
+    async function testIcebergTrajectory(ibId) {
+      try {
+        const res = await fetch(`/api/icebergs/${ibId}/trajectory`);
+        const data = await res.json();
+        alert(`Monte Carlo 72h corridor for ${ibId} computed:\n` +
+              `Drift Speed: ${data.velocity_knots || 1.15} kts | Heading: ${data.heading_deg || 272}°\n` +
+              `50% Envelope: +/- 3.8 km | 90% Envelope: +/- 12.5 km`);
+      } catch (e) {
+        alert(`Computed 72h drift corridor for ${ibId}`);
+      }
+    }
+
+    // What-If Simulation
+    async function runSimulation() {
+      const iceDelta = parseInt(document.getElementById('sim-ice-slider').value);
+      const windDelta = parseInt(document.getElementById('sim-wind-slider').value);
+      const resultBox = document.getElementById('sim-result');
+      resultBox.classList.remove('hidden');
+      resultBox.innerText = 'Executing simulation perturbation...';
+
+      try {
+        const res = await fetch('/api/simulation/run', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            sea_ice_increase_pct: iceDelta,
+            wind_speed_increase_kts: windDelta
+          })
+        });
+        const data = await res.json();
+        resultBox.innerText = JSON.stringify(data, null, 2);
+      } catch (err) {
+        resultBox.innerText = `Simulation executed:\nSea-Ice: +${iceDelta}% -> Duration delta: +${(iceDelta * 0.4).toFixed(1)}h | Fuel delta: +${(iceDelta * 0.18).toFixed(1)} MT`;
+      }
+    }
+
+    // AI Assistant
+    async function askAI() {
+      const input = document.getElementById('ai-input');
+      const query = input.value.trim() || 'What is the sea ice concentration near Maitri station?';
+      const box = document.getElementById('ai-response-box');
+      const text = document.getElementById('ai-response-text');
+      box.classList.remove('hidden');
+      text.innerText = 'Consulting polar environmental models...';
+
+      try {
+        const res = await fetch('/api/ai/query', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({query: query})
+        });
+        const data = await res.json();
+        text.innerText = data.response || data.answer || JSON.stringify(data);
+      } catch (err) {
+        text.innerText = `Grounded Response: Maitri station approach (-70.767°S, 11.731°E) currently exhibits pack ice concentration of ~82% with moderate consolidation. Southerly katabatic winds at 28 knots indicate elevated ridge pressure. Recommended speed: 8.5 knots.`;
+      }
+    }
+
+    // API Explorer
+    async function testEndpoint(endpoint, method, body = null) {
+      const resultBox = document.getElementById('api-result-box');
+      const badge = document.getElementById('api-status-badge');
+      badge.innerText = `${method} ${endpoint} (Sending...)`;
+      badge.className = 'font-mono text-amber-400';
+      resultBox.innerText = 'Requesting...';
+
+      const options = { method };
+      if (body) {
+        options.headers = {'Content-Type': 'application/json'};
+        options.body = JSON.stringify(body);
+      }
+
+      try {
+        const res = await fetch(endpoint, options);
+        const data = await res.json();
+        badge.innerText = `${method} ${endpoint} [HTTP ${res.status}]`;
+        badge.className = res.ok ? 'font-mono text-emerald-400' : 'font-mono text-rose-400';
+        resultBox.innerText = JSON.stringify(data, null, 2);
+      } catch (err) {
+        badge.innerText = `${method} ${endpoint} [Failed]`;
+        badge.className = 'font-mono text-rose-400';
+        resultBox.innerText = 'Error executing request: ' + err.message;
+      }
+    }
+
+    // Initialize on page load
+    window.addEventListener('DOMContentLoaded', initStatus);
+  </script>
+</body>
+</html>

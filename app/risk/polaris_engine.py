@@ -13,6 +13,7 @@ Calculates:
 """
 
 import os
+from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 import yaml
 from pydantic import BaseModel, Field
@@ -47,8 +48,12 @@ class PolarisIceRegime(BaseModel):
 class PolarisEngine:
     """Calculates POLARIS-style Risk Index Outcome (RIO) from versioned IMO tables."""
 
-    def __init__(self, config_path: str = "config/polaris_riv.yaml"):
-        self.config_path = config_path
+    def __init__(self, config_path: str = None):
+        if config_path is None:
+            default_path = Path(__file__).resolve().parent.parent.parent / "config" / "polaris_riv.yaml"
+            self.config_path = str(default_path) if default_path.exists() else "config/polaris_riv.yaml"
+        else:
+            self.config_path = config_path
         self.riv_tables = self._load_riv_tables()
 
     def _load_riv_tables(self) -> dict:
