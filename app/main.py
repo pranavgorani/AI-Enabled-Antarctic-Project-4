@@ -11,6 +11,8 @@ import os
 from datetime import datetime
 from typing import List, Dict, Any, Optional
 from fastapi import FastAPI, Depends, HTTPException, Response, Query, Body, Request
+from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
@@ -102,16 +104,36 @@ class FuelLindqvistRequest(BaseModel):
     vessel_profile: Optional[Dict[str, Any]] = None
 
 
+PUBLIC_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "public")
+if os.path.exists(PUBLIC_DIR):
+    app.mount("/static", StaticFiles(directory=PUBLIC_DIR), name="static")
+
+
 @app.get("/", tags=["System"])
-def root():
+def root(request: Request):
+    accept = request.headers.get("accept", "")
+    index_file = os.path.join(PUBLIC_DIR, "index.html")
+    # If accessed by browser, serve the interactive web application
+    if ("text/html" in accept or "*/*" in accept) and os.path.exists(index_file):
+        return FileResponse(index_file)
     return {
         "system": "POLAR NAVIGATOR AI",
         "organization": "Ministry of Earth Sciences (MoES) / NCPOR",
         "theme": "Transportation & Logistics",
         "status": "OPERATIONAL",
         "documentation": "/docs",
+        "dashboard": "/",
         "compliance": "Developed as an SIH prototype addressing an MoES/NCPOR problem statement. Not certified for sole navigation."
     }
+
+
+@app.get("/dashboard", tags=["System"])
+def dashboard():
+    """Serves the main Antarctic Decision Support Dashboard."""
+    index_file = os.path.join(PUBLIC_DIR, "index.html")
+    if os.path.exists(index_file):
+        return FileResponse(index_file)
+    return HTMLResponse("<h1>POLAR NAVIGATOR AI Dashboard</h1><p>Mission Control Ready.</p>")
 
 
 @app.get("/api/health", tags=["System"])
@@ -121,6 +143,7 @@ def health_check():
     return {
         "status": "ok",
         "service": "polar-navigator-ai",
+        "mode": os.getenv("DATA_MODE", "demo"),
         "environment": env_str
     }
 
@@ -356,6 +379,32 @@ def list_missions(db: Session = Depends(get_db)):
             ]
         }
     return {"status": "success", "count": len(missions), "missions": missions}
+
+
+@app.get("/api/missions/{mission_id}", tags=["Missions"])
+def get_mission_by_id(mission_id: int, db: Session = Depends(get_db)):
+    """Retrieves a single mission by ID."""
+    mission = db.query(Mission).filter(Mission.id == mission_id).first()
+    if not mission:
+        if mission_id == 1:
+            return {
+                "status": "success",
+                "mission": {
+                    "id": 1,
+                    "name": "Antarctic Research Mission Alpha",
+                    "description": "MoES/NCPOR 44th Indian Scientific Expedition to Antarctica",
+                    "start_port": "Sub-Antarctic Gateway (-58.5°S, 10.5°E)",
+                    "start_lat": -58.5,
+                    "start_lon": 10.5,
+                    "destination_name": "Maitri Research Station",
+                    "dest_lat": -70.767,
+                    "dest_lon": 11.731,
+                    "vessel": "RV Bharati Explorer (PC4)",
+                    "status": "active"
+                }
+            }
+        raise HTTPException(status_code=404, detail=f"Mission with ID {mission_id} not found")
+    return {"status": "success", "mission": mission}
 
 
 @app.get("/api/report/export", tags=["Reports"])

@@ -30,6 +30,27 @@ class IcebergService:
             self._icebergs = iceberg_processor.process_observations(raw)
         return self._icebergs
 
+    def add_icebergs(self, new_bergs: list[dict]) -> list[dict]:
+        """Appends new or uploaded iceberg observations."""
+        current = list(self.get_all_icebergs())
+        processed = iceberg_processor.process_observations(new_bergs)
+        # Avoid duplicate IDs
+        existing_ids = {ib["id"].upper() for ib in current}
+        added = []
+        for p in processed:
+            if p["id"].upper() not in existing_ids:
+                current.insert(0, p)
+                existing_ids.add(p["id"].upper())
+                added.append(p)
+            else:
+                # Update existing
+                for i, existing in enumerate(current):
+                    if existing["id"].upper() == p["id"].upper():
+                        current[i] = p
+                        added.append(p)
+        self._icebergs = current
+        return added
+
     def get_iceberg_by_id(self, iceberg_id: str) -> dict | None:
         """Finds iceberg by identifier (e.g. ICE-042)."""
         all_bergs = self.get_all_icebergs()

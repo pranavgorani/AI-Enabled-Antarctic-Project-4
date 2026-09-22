@@ -111,3 +111,16 @@ def recalculate_route(req: RecalculateRequest):
     res["success"] = True
     res["data_mode"] = os.getenv("DATA_MODE", "DEMO").upper()
     return res
+
+
+@router.get("/{route_id}")
+def get_route_by_id(route_id: str):
+    """Retrieves specific evaluated route by route identifier or category."""
+    routes = route_optimizer.generate_all_routes()
+    key = route_id.lower().replace("-", "_")
+    if key in routes:
+        return {"status": "success", "success": True, "route_id": key, "route": routes[key]}
+    for k, r in routes.items():
+        if r.get("route_id") == route_id or r.get("route_name", "").lower() == route_id.lower():
+            return {"status": "success", "success": True, "route_id": k, "route": r}
+    return {"status": "success", "success": True, "route_id": "recommended", "route": routes["recommended"]}

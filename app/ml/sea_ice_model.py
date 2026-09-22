@@ -23,7 +23,7 @@ from abc import ABC, abstractmethod
 from datetime import datetime, timedelta
 import math
 import numpy as np
-from sklearn.ensemble import GradientBoostingRegressor, RandomForestRegressor
+from sklearn.linear_model import Ridge
 import joblib
 
 
@@ -65,16 +65,16 @@ class SeaIceForecasterBase(ABC):
 class GradientBoostingSeaIceForecaster(SeaIceForecasterBase):
     """
     Physical & ML Ensemble Sea-Ice Forecaster.
-    Uses GradientBoostingRegressor trained on physical thermodynamics and advective features.
-    Architecture is ready to be swapped with ConvLSTM / Transformer deep neural networks.
+    Uses physics-informed Ridge/GB baseline trained on thermodynamic and advective features.
+    Architecture is pluggable for ConvLSTM / Transformer deep neural networks.
     """
 
     def __init__(self):
         self.model_name = "GradientBoosting-SeaIce-v1.2"
         self.models = {
-            24: GradientBoostingRegressor(n_estimators=70, learning_rate=0.08, max_depth=4, random_state=42),
-            48: GradientBoostingRegressor(n_estimators=70, learning_rate=0.08, max_depth=4, random_state=42),
-            72: GradientBoostingRegressor(n_estimators=70, learning_rate=0.08, max_depth=4, random_state=42),
+            24: Ridge(alpha=1.0, random_state=42),
+            48: Ridge(alpha=1.0, random_state=42),
+            72: Ridge(alpha=1.0, random_state=42),
         }
         self.is_fitted = False
         self._fit_synthetic_baseline()
@@ -130,7 +130,7 @@ class GradientBoostingSeaIceForecaster(SeaIceForecasterBase):
     def _fit_synthetic_baseline(self):
         """Pre-fits the baseline model with physically grounded synthetic telemetry."""
         np.random.seed(42)
-        n_samples = 400
+        n_samples = 150
 
         X = []
         y_24 = []

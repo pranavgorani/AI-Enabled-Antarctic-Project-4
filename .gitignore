@@ -43,3 +43,8 @@ data/cache/
 
 # Vercel
 .vercel/
+
+# Packaging builds
+build/
+dist/
+*.egg-info/
